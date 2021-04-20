@@ -1,0 +1,6398 @@
+{
+  "190907.J08+46": {
+    "190907": {
+      "fluence": {
+        "error_high": 0.6,
+        "error_low": -0.6,
+        "display_name": "Fluence (Jy ms)",
+        "value": 1.7
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "value": 0.3
+      },
+      "dm": {
+        "error_low": -0.4,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.4,
+        "value": 310
+      },
+      "scattering_time": {
+        "value": "<5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "error_low": -1,
+        "value": 3,
+        "display_name": "Width (ms)",
+        "error_high": 1
+      },
+      "snr": {
+        "value": 9.959523201,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-09-07 17:02:43.311"
+      }
+    },
+    "190915": {
+      "width": {
+        "error_high": 0.14,
+        "display_name": "Width (ms)",
+        "value": 0.54,
+        "error_low": -0.14
+      },
+      "flux": {
+        "value": 0.4,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2
+      },
+      "timestamp": {
+        "value": "2019-09-15 16:27:36.8563"
+      },
+      "dm": {
+        "value": 309.5,
+        "error_low": -0.3,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.3
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.9396419525
+      },
+      "fluence": {
+        "value": 0.9,
+        "error_high": 0.4,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.4
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "error_low": -0.4,
+        "error_high": 0.4,
+        "value": 1.7
+      }
+    },
+    "190925": {
+      "width": {
+        "error_low": -0.8,
+        "error_high": 0.8,
+        "value": 3,
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.2,
+        "error_low": -0.2,
+        "value": 309.5
+      },
+      "flux": {
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "value": 0.2,
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "error_high": 0.2,
+        "error_low": -0.2,
+        "value": 0.7,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 9.9800329208,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-09-25 15:54:06.438"
+      },
+      "scattering_time": {
+        "value": "<4.6",
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200307": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.68754673
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-03-07 05:07:50.022896"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 308.9419555664,
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "200729": {
+      "dm": {
+        "value": 307.324432373,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2020-07-29 19:42:05.772016"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 24.4327945709
+      }
+    },
+    "dm": {
+      "value": 309.6,
+      "display_name": "DM (pc/cc)"
+    },
+    "ymw16": {
+      "value": 51
+    },
+    "dec": {
+      "value": "+46:16",
+      "display_name": "Dec (deg)"
+    },
+    "gl": {
+      "value": 173.4
+    },
+    "gb": {
+      "value": 32.3
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "08:09"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/2001.03595.pdf",
+      "display_name": "Publication"
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "ne2001": {
+      "value": 53
+    }
+  },
+  "FRB20180814A": {
+    "180814": {
+      "width": {
+        "value": 7.9,
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 11.0477428436,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2018-08-14 14:49:50.000000"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -15,
+        "value": 21,
+        "error_high": 15
+      },
+      "dm": {
+        "value": 189,
+        "error_low": -0.1,
+        "error_high": 0.1,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "180906": {
+      "timestamp": {
+        "value": "2018-09-11 13:40:40.250511"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.1024227142,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_high": 3,
+        "value": 191,
+        "error_low": -3,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "value": 3.9,
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "180911": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.1024227142,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": 7.9,
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "value": 3.4,
+        "error_high": 0.3,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.3
+      },
+      "timestamp": {
+        "value": "2018-09-11 13:40:40.250511"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "value": 189.8,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.9,
+        "error_high": 0.9
+      }
+    },
+    "180917": {
+      "timestamp": {
+        "value": "2018-09-17 00:46:38.163456"
+      },
+      "dm": {
+        "error_low": -0.1,
+        "value": 189.5,
+        "error_high": 0.1,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 31,
+        "value": 66,
+        "error_low": -31
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "value": 63,
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 19.0172119141
+      }
+    },
+    "180919": {
+      "timestamp": {
+        "value": "2018-09-19 12:36:11.855550"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.3996906281
+      },
+      "dm": {
+        "error_low": -0.1,
+        "error_high": 0.1,
+        "value": 190,
+        "display_name": "DM (pc/cc)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": 16,
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "error_high": 6,
+        "value": 12,
+        "error_low": -6,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "181028": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": 42,
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 11.7498807907,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "value": 188.9,
+        "error_low": -0.5,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.5
+      },
+      "timestamp": {
+        "value": "2018-10-28 10:12:34.523738"
+      }
+    },
+    "181118": {
+      "timestamp": {
+        "value": "2018-11-18 08:44:49.691204"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 187.6296539307,
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.2831878662
+      }
+    },
+    "181120": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.5905561447
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2018-11-20 08:25:28.207892"
+      },
+      "dm": {
+        "value": 190.864654541,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "190224": {
+      "timestamp": {
+        "value": "2019-02-24 01:54:18.129039"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "value": 190.864654541,
+        "error_low": 3.234994173
+      },
+      "snr": {
+        "value": 10.9584197998,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "190329": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.7038764954
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "value": 189.2471618652
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-03-29 23:58:21.291010"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "190517": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.5855789185,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-05-17 20:33:36.994949"
+      },
+      "dm": {
+        "value": 187.6296539307,
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "190611": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "value": 187.6296539307,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "timestamp": {
+        "value": "2019-06-11 18:52:42.513072"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 15.8782606125,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "190625": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.4162311554
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-06-25 17:43:46.767495"
+      },
+      "dm": {
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461,
+        "value": 187.6296539307
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "190626": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-06-26 18:37:52.780321"
+      },
+      "dm": {
+        "error_high": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "value": 194.0996551514,
+        "error_low": 12.9399766922
+      },
+      "snr": {
+        "value": 11.876914978,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "190817": {
+      "dm": {
+        "value": 187.6296539307,
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461
+      },
+      "timestamp": {
+        "value": "2019-08-17 14:39:57.812615"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.6081533432
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "190929": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.236495018
+      },
+      "timestamp": {
+        "value": "2019-09-29 11:58:34.000000"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 187.6296539307,
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "191029": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2019-10-29 09:41:58.675691"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 12.8219547272,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 190.864654541,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173,
+        "error_low": 3.234994173
+      }
+    },
+    "191107": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.3917360306
+      },
+      "timestamp": {
+        "value": "2019-11-07 21:23:07.147988"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 12.9399766922,
+        "error_low": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "value": 194.0996551514
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "191111": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 12.294295311,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-11-11 08:55:15.504688"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 184.3946685791,
+        "error_high": 3.234994173,
+        "error_low": 3.234994173
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "200224": {
+      "dm": {
+        "error_low": 6.4699883461,
+        "value": 187.6296539307,
+        "display_name": "DM (pc/cc)",
+        "error_high": 6.4699883461
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2020-02-24 01:47:54.332139"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.1954984665
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "200302": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 12.9399766922,
+        "error_high": 12.9399766922,
+        "value": 194.0996551514
+      },
+      "timestamp": {
+        "value": "2020-03-02 01:52:16.446643"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 15.1761598587
+      }
+    },
+    "200903": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.4500617981
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-09-03 13:20:33.303715"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461,
+        "value": 187.6296539307,
+        "error_high": 6.4699883461
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "ne2001": {
+      "value": 87
+    },
+    "ra": {
+      "value": "04:22",
+      "display_name": "RA (deg)"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "180814.J0422+73"
+    },
+    "dec": {
+      "value": "+73:40",
+      "display_name": "Dec (deg)"
+    },
+    "gb": {
+      "value": 16.6
+    },
+    "gl": {
+      "value": 136.4
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/1901.04525.pdf",
+      "display_name": "Publication"
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "ymw16": {
+      "value": 100
+    },
+    "dm": {
+      "value": 189.04,
+      "display_name": "DM (pc/cc)"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    }
+  },
+  "FRB20180908B": {
+    "180908": {
+      "flux": {
+        "error_high": 0.4,
+        "value": 0.6,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.4
+      },
+      "dm": {
+        "error_high": 0.9,
+        "error_low": -0.9,
+        "value": 195.7,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<2.1"
+      },
+      "width": {
+        "error_low": -0.1,
+        "error_high": 0.1,
+        "display_name": "Width (ms)",
+        "value": 1.91
+      },
+      "timestamp": {
+        "value": "2018-09-08 21:13:01.2578"
+      },
+      "fluence": {
+        "value": 2.7,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1.1,
+        "error_low": -1.1
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.4016227722
+      }
+    },
+    "190621": {
+      "timestamp": {
+        "value": "2019-06-21 02:21:21.1131"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.9,
+        "value": 195.7,
+        "error_low": -0.9
+      },
+      "flux": {
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2,
+        "value": 0.4
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": 1.1,
+        "error_low": -0.3,
+        "error_high": 0.3
+      },
+      "scattering_time": {
+        "value": "<3.1",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 9.0063648224,
+        "display_name": "SNR"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_low": -0.3,
+        "value": 2.8,
+        "error_high": 0.3
+      }
+    },
+    "190702": {
+      "timestamp": {
+        "value": "2019-07-02 01:58:14.678190"
+      },
+      "dm": {
+        "value": 195.7171478271,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 8.0012979507,
+        "display_name": "SNR"
+      }
+    },
+    "190718": {
+      "dm": {
+        "error_low": -0.8,
+        "value": 196.1,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.8
+      },
+      "width": {
+        "value": 9,
+        "display_name": "Width (ms)",
+        "error_high": 0.2,
+        "error_low": -0.2
+      },
+      "fluence": {
+        "value": 2.9,
+        "error_low": -1.8,
+        "error_high": 1.8,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2019-07-18 01:11:20.056"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": 1.29,
+        "error_high": 0.03,
+        "error_low": -0.03
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.3479566574
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "gb": {
+      "value": 42.9
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/2001.03595.pdf",
+      "display_name": "Publication"
+    },
+    "gl": {
+      "value": 124.7
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "previous_name": {
+      "value": "180908.J1232+74",
+      "display_name": "Previous Name"
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+74:12"
+    },
+    "ymw16": {
+      "value": 31
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "12:32"
+    },
+    "ne2001": {
+      "value": 38
+    }
+  },
+  "FRB20180916B": {
+    "180916": {
+      "flux": {
+        "error_low": -0.6,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.6,
+        "value": 1.4
+      },
+      "timestamp": {
+        "value": "2018-09-16 10:15:19.8021"
+      },
+      "dm": {
+        "error_high": 0.4,
+        "value": 349.2,
+        "error_low": -0.4,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "error_high": 0.7,
+        "value": 1.4,
+        "display_name": "Width (ms)",
+        "error_low": -0.7
+      },
+      "scattering_time": {
+        "value": "<1.5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 18.7228050232
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1.2,
+        "error_low": -1.2,
+        "value": 2.3
+      }
+    },
+    "181019": {
+      "timestamp": {
+        "value": "2018-09-19 08:13:22.7507"
+      },
+      "dm": {
+        "error_low": -0.6,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.6,
+        "value": 349
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "value": 0.6
+      },
+      "fluence": {
+        "error_high": 1.3,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -1.3,
+        "value": 2.7
+      },
+      "scattering_time": {
+        "value": "<4.7",
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "value": 4.1,
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 16.2178668976
+      }
+    },
+    "181120": {
+      "snr": {
+        "value": 13.3660058975,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": 1.1,
+        "display_name": "Width (ms)",
+        "error_high": 0.9,
+        "error_low": -0.9
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.3"
+      },
+      "timestamp": {
+        "value": "2018-11-20 05:56:06.23243"
+      },
+      "fluence": {
+        "error_low": -0.8,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 0.8,
+        "value": 1.8
+      },
+      "dm": {
+        "error_high": 0.6,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.6,
+        "value": 349.9
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_low": -0.5,
+        "error_high": 0.5,
+        "value": 1.1
+      }
+    },
+    "181222": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 23.9827404022
+      },
+      "scattering_time": {
+        "value": "<1.6",
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2018-12-22 03:59:23.2082"
+      },
+      "width": {
+        "error_low": -0.04,
+        "display_name": "Width (ms)",
+        "error_high": 0.04,
+        "value": 4.95
+      },
+      "fluence": {
+        "error_low": -12,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 12,
+        "value": 27
+      },
+      "flux": {
+        "value": 1.7,
+        "error_high": 0.7,
+        "error_low": -0.7,
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "value": 349.1,
+        "error_high": 0.1,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.1
+      }
+    },
+    "181223": {
+      "fluence": {
+        "error_low": -3.8,
+        "error_high": 3.8,
+        "display_name": "Fluence (Jy ms)",
+        "value": 8.1
+      },
+      "timestamp": {
+        "value": "2018-12-23 03:51:28.96040"
+      },
+      "width": {
+        "error_low": -0.05,
+        "value": 1.06,
+        "error_high": 0.05,
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 31.7876911163
+      },
+      "scattering_time": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "display_name": "Scattering Time (ms)",
+        "value": 2.4
+      },
+      "flux": {
+        "value": 1.7,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.6,
+        "error_low": -0.6
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.7,
+        "error_high": 0.7,
+        "value": 349.7
+      }
+    },
+    "181225": {
+      "scattering_time": {
+        "value": 2,
+        "error_high": 0.5,
+        "error_low": -0.5,
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 16.1740169525,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2018-12-25 03:53:03.9260"
+      },
+      "fluence": {
+        "error_high": 0.9,
+        "value": 1.9,
+        "error_low": -0.9,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "display_name": "Width (ms)",
+        "value": 1.3
+      },
+      "dm": {
+        "error_high": 0.7,
+        "display_name": "DM (pc/cc)",
+        "value": 348.9,
+        "error_low": -0.7
+      },
+      "flux": {
+        "value": 0.4,
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "181226": {
+      "scattering_time": {
+        "value": "<0.9",
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "error_low": -0.03,
+        "display_name": "Width (ms)",
+        "error_high": 0.03,
+        "value": 0.87
+      },
+      "timestamp": {
+        "value": "2018-12-26 03:43:30.1074"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": 1.6,
+        "error_low": -0.6,
+        "error_high": 0.6
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 348.8,
+        "error_low": -0.2,
+        "error_high": 0.2
+      },
+      "snr": {
+        "value": 16.6822795868,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": 3.8,
+        "error_high": 1.8,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -1.8
+      }
+    },
+    "190126": {
+      "timestamp": {
+        "value": "2019-01-26 01:32:45.3289"
+      },
+      "fluence": {
+        "error_high": 1,
+        "display_name": "Fluence (Jy ms)",
+        "value": 2,
+        "error_low": -1
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": 2.53,
+        "error_low": -0.13,
+        "error_high": 0.13
+      },
+      "scattering_time": {
+        "value": "<2.8",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.5811891556
+      },
+      "dm": {
+        "value": 349.8,
+        "error_low": -0.5,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.5
+      },
+      "flux": {
+        "error_low": -0.3,
+        "error_high": 0.3,
+        "display_name": "Flux (mJy)",
+        "value": 0.7
+      }
+    },
+    "190518": {
+      "timestamp": {
+        "value": "2019-05-18 18:21:05.993431"
+      },
+      "snr": {
+        "value": 15.9965457916,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "value": 350.9968566895,
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "190519": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "value": 350.9968566895,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "timestamp": {
+        "value": "2019-05-19 17:50:25.678653"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 18.8098163605
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "190603": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 9.294090271,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 347.7618713379,
+        "error_high": 1.6174970865
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-06-03 17:09:23.395479"
+      }
+    },
+    "190605": {
+      "dm": {
+        "error_low": 3.234994173,
+        "value": 352.6143493652,
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-06-05 16:56:04.897646"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 23.0400676727
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "190809": {
+      "timestamp": {
+        "value": "2019-08-09 12:50:49.264130"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 16.7776813507
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 352.6143493652
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      }
+    },
+    "190810": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173,
+        "value": 346.1443786621
+      },
+      "snr": {
+        "value": 9.2073354721,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-08-10 12:49:43.517432"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "190825": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 347.7618713379
+      },
+      "timestamp": {
+        "value": "2019-08-25 11:48:27.640875"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 51.4592208862,
+        "display_name": "SNR"
+      }
+    },
+    "191030": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 346.1443786621,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "timestamp": {
+        "value": "2019-10-30 07:33:56.995676"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 8.08659935,
+        "display_name": "SNR"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "191217": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-12-18 04:09:27.633710"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "value": 355.8493652344
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.8761425018
+      }
+    },
+    "191218": {
+      "dm": {
+        "error_high": 6.4699883461,
+        "value": 355.8493652344,
+        "error_low": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-12-18 04:09:27.633710"
+      },
+      "snr": {
+        "value": 12.8761425018,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "191219": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-12-19 04:07:38.821993"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 10.0534486771,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173,
+        "value": 352.6143493652,
+        "error_low": 3.234994173
+      }
+    },
+    "200104": {
+      "timestamp": {
+        "value": "2020-01-04 03:16:14.907550"
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "value": 350.9968566895
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 9.2500715256,
+        "display_name": "SNR"
+      }
+    },
+    "200120": {
+      "dm": {
+        "error_low": 3.234994173,
+        "value": 346.1443786621,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 16.7035770416,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-01-20 01:49:14.068615"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "200203": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.5318174362
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2020-02-03 01:07:23.999841"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "value": 350.9968566895,
+        "error_high": 1.6174970865
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200219": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.8297338486
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "value": 346.1443786621,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2020-02-19 23:53:36.995061"
+      }
+    },
+    "200220": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.7861032486
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 352.6143493652,
+        "error_high": 3.234994173
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-02-20 00:10:09.912647"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200221": {
+      "dm": {
+        "value": 342.9093933105,
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 24.7193431854
+      },
+      "timestamp": {
+        "value": "2020-02-21 00:09:48.615083"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200324": {
+      "timestamp": {
+        "value": "2020-03-24 21:35:53.718858"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.0174436569
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "value": 346.1443786621,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200423": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.5540771484
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2020-04-23 19:39:04.299594"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 347.7618713379,
+        "error_high": 1.6174970865
+      }
+    },
+    "200424": {
+      "dm": {
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "value": 350.9968566895
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.2044963837,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2020-04-24 19:53:26.542656"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "200512": {
+      "timestamp": {
+        "value": "2020-05-12 18:38:20.239628"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 352.6143493652
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 22.6518535614,
+        "display_name": "SNR"
+      }
+    },
+    "200513": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "error_high": 3.234994173,
+        "value": 352.6143493652
+      },
+      "timestamp": {
+        "value": "2020-05-13 18:31:04.052001"
+      },
+      "snr": {
+        "value": 12.2102403641,
+        "display_name": "SNR"
+      }
+    },
+    "200613": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 19.2556266785
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 346.1443786621
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-06-13 16:37:44.085575"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200614": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 15.4227876663
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-06-14 16:26:52.101007"
+      },
+      "dm": {
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173,
+        "value": 352.6143493652
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "200702": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-07-02 15:25:42.342735"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461,
+        "value": 355.8493652344
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 16.2136936188
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "200801": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 8.2737817764,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-08-01 13:27:31.367029"
+      },
+      "dm": {
+        "value": 346.1443786621,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "200903": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-09-03 11:10:32.495964"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173,
+        "error_low": 3.234994173,
+        "value": 352.6143493652
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.0955209732
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "200904": {
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "value": 347.7618713379,
+        "error_high": 1.6174970865
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2020-09-04 10:52:03.043901"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 15.7798194885
+      }
+    },
+    "200919": {
+      "dm": {
+        "error_high": 6.4699883461,
+        "value": 355.8493652344,
+        "error_low": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-09-19 09:45:15.585285"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.8585586548
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      }
+    },
+    "201123": {
+      "timestamp": {
+        "value": "2020-11-23 05:52:02.519931"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.8087485433,
+        "error_high": 0.8087485433,
+        "value": 348.5706176758
+      },
+      "snr": {
+        "value": 26.0374393463,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "210111": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2021-01-11 02:30:09.675430"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.4043742716,
+        "error_high": 0.4043742716,
+        "value": 348.9750061035
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.3368549347
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "210127": {
+      "timestamp": {
+        "value": "2021-01-27 01:27:25.718269"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "error_low": 0.4043742716,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.4043742716,
+        "value": 348.9750061035
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.5616579056
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "210130": {
+      "timestamp": {
+        "value": "2021-01-30 01:03:21.275666"
+      },
+      "dm": {
+        "error_high": 0.4043742716,
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.4043742716,
+        "value": 348.9750061035
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 17.1579704285,
+        "display_name": "SNR"
+      }
+    },
+    "210131": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 15.2348432541
+      },
+      "timestamp": {
+        "value": "2021-01-31 01:23:59.433226"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.4043742716,
+        "error_low": 0.4043742716,
+        "value": 348.1662597656
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "181104A": {
+      "snr": {
+        "value": 17.9370384216,
+        "display_name": "SNR"
+      },
+      "width": {
+        "error_low": -0.7,
+        "error_high": 0.7,
+        "value": 1.37,
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2018-11-04 06:57:18.58524"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": 2.5,
+        "error_low": -1.2,
+        "error_high": 1.2
+      },
+      "flux": {
+        "error_high": 0.5,
+        "value": 1.4,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.5
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 349.5,
+        "error_high": 0.3,
+        "error_low": -0.3
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.5"
+      }
+    },
+    "181104B": {
+      "scattering_time": {
+        "value": "<3.5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": 0.4,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.2,
+        "error_low": -0.2
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_high": 1.1,
+        "value": 6.3,
+        "error_low": -1.1
+      },
+      "fluence": {
+        "error_low": -1,
+        "value": 2,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1
+      },
+      "snr": {
+        "value": 10.5795345306,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.2,
+        "error_low": -0.2,
+        "value": 349.6
+      },
+      "timestamp": {
+        "value": "2018-11-04 07:07:01.591"
+      }
+    },
+    "190518A": {
+      "timestamp": {
+        "value": "2019-05-18 18:13:42.634524"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.2759199142
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "value": 350.9968566895
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "190519A": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "error_high": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "value": 349.3793640137,
+        "error_low": 12.9399766922
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2019-05-19 18:09:01.515561"
+      },
+      "snr": {
+        "value": 21.6746864319,
+        "display_name": "SNR"
+      }
+    },
+    "190519B": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "value": 346.1443786621,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-05-19 18:10:50.137548"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 16.4147415161
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "190604A": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 42.200958252,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "value": 352.6143493652,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "timestamp": {
+        "value": "2019-06-04 17:11:39.871905"
+      }
+    },
+    "190605A": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-06-05 17:02:31.035758"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 25.4569072723
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "error_low": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "error_high": 12.9399766922,
+        "value": 349.3793640137
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "190825A": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 346.1443786621,
+        "error_low": 3.234994173,
+        "error_high": 3.234994173
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.5297317505
+      },
+      "timestamp": {
+        "value": "2019-08-25 11:52:03.013140"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "190825B": {
+      "timestamp": {
+        "value": "2019-08-25 11:53:44.856087"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.2508859634,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "value": 347.7618713379
+      }
+    },
+    "191030A": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 12.6702232361,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "value": 346.1443786621,
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2019-10-30 07:41:52.755579"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "191219A": {
+      "timestamp": {
+        "value": "2019-12-19 04:11:18.252252"
+      },
+      "snr": {
+        "value": 17.7635211945,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "value": 350.9968566895,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200104A": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 17.8408927917
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 346.1443786621
+      },
+      "timestamp": {
+        "value": "2020-01-04 03:18:20.060339"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      }
+    },
+    "200204A": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2020-02-04 00:26:54.804782"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "value": 370.406829834,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865
+      },
+      "snr": {
+        "value": 9.2032566071,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "200204B": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.6664333344
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "value": 346.1443786621,
+        "error_high": 3.234994173
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2020-02-04 00:57:31.674004"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "200204C": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 51.767036438,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "value": 350.9968566895
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-02-04 00:59:50.321966"
+      }
+    },
+    "200204D": {
+      "snr": {
+        "value": 10.0074253082,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-02-04 01:03:26.181819"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "value": 347.7618713379,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865
+      }
+    },
+    "200204E": {
+      "timestamp": {
+        "value": "2020-02-04 01:17:21.372605"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 347.7618713379,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.1533527374
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      }
+    },
+    "200717A": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "value": 352.6143493652,
+        "error_low": 3.234994173,
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 17.6622714996,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-07-17 13:57:48.291353"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200717B": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 11.4978933334,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-07-17 14:06:11.859491"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "value": 346.1443786621,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173
+      }
+    },
+    "210129A": {
+      "timestamp": {
+        "value": "2021-01-29 01:11:05.295124"
+      },
+      "dm": {
+        "value": 351.8056030273,
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.8087485433,
+        "error_high": 0.8087485433
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 8.5969381332,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "210129B": {
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.4043742716,
+        "value": 349.7837524414,
+        "error_high": 0.4043742716
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2021-01-29 01:25:15.325877"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.0649366379
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "ne2001": {
+      "value": 200
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "spiral (https://www.nature.com/articles/s41586-019-1866-z)"
+    },
+    "gl": {
+      "value": 129.7
+    },
+    "gb": {
+      "value": 3.7
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "01:58"
+    },
+    "dm": {
+      "value": 349.2,
+      "display_name": "DM (pc/cc)"
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/1908.03507.pdf",
+      "display_name": "Publication"
+    },
+    "ymw16": {
+      "value": 330
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "dec": {
+      "value": "+65:44",
+      "display_name": "Dec (deg)"
+    },
+    "previous_name": {
+      "value": "180916.J0158+65",
+      "display_name": "Previous Name"
+    }
+  },
+  "FRB20181017A": {
+    "181017": {
+      "fluence": {
+        "error_low": -0.5,
+        "display_name": "Fluence (Jy ms)",
+        "value": 1,
+        "error_high": 0.5
+      },
+      "width": {
+        "value": 13.4,
+        "display_name": "Width (ms)",
+        "error_high": 1.4,
+        "error_low": -1.4
+      },
+      "snr": {
+        "value": 12.8650493622,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2018-10-17 23:26:11.8600"
+      },
+      "flux": {
+        "error_high": 0.3,
+        "value": 0.4,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.3
+      },
+      "scattering_time": {
+        "value": "<16",
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "value": 1281.9,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.4,
+        "error_high": 0.4
+      }
+    },
+    "190216": {
+      "width": {
+        "value": 20.2,
+        "error_high": 1.7,
+        "error_low": -1.7,
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 5,
+        "value": 16,
+        "error_low": -5
+      },
+      "dm": {
+        "error_high": 0.6,
+        "display_name": "DM (pc/cc)",
+        "value": 1281,
+        "error_low": -0.6
+      },
+      "scattering_time": {
+        "value": 11,
+        "error_low": -2,
+        "display_name": "Scattering Time (ms)",
+        "error_high": 2
+      },
+      "snr": {
+        "value": 22.6353340149,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2,
+        "value": 0.4,
+        "error_high": 0.2
+      },
+      "timestamp": {
+        "value": "2019-02-16 15:26:58.029"
+      }
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "dm": {
+      "value": 1281.6,
+      "display_name": "DM (pc/cc)"
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "ymw16": {
+      "value": 37
+    },
+    "ne2001": {
+      "value": 43
+    },
+    "ra": {
+      "value": "17:05",
+      "display_name": "RA (deg)"
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/1908.03507.pdf"
+    },
+    "gl": {
+      "value": 99.2
+    },
+    "previous_name": {
+      "value": "181017.J1705+68",
+      "display_name": "Previous Name"
+    },
+    "dec": {
+      "value": "+68:17",
+      "display_name": "Dec (deg)"
+    },
+    "gb": {
+      "value": 34.8
+    }
+  },
+  "FRB20181030B": {
+    "181030": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.5179185867
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2018-10-30 04:13:13.025731"
+      },
+      "dm": {
+        "value": 101.9023132324,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200122": {
+      "dm": {
+        "value": 101.9023132324,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2020-01-22 10:20:32.574499"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.8524532318
+      }
+    },
+    "181030A": {
+      "scattering_time": {
+        "value": "<0.8",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 11.5179185867,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2018-10-30 04:13:13.0255"
+      },
+      "width": {
+        "error_high": 0.08,
+        "display_name": "Width (ms)",
+        "value": 0.59,
+        "error_low": -0.08
+      },
+      "flux": {
+        "value": 3.2,
+        "error_high": 1.7,
+        "error_low": -1.7,
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": 7.3,
+        "error_high": 3.8,
+        "error_low": -3.8
+      },
+      "dm": {
+        "value": 103.5,
+        "error_high": 0.7,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.7
+      }
+    },
+    "181030B": {
+      "fluence": {
+        "value": 4.5,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1.8,
+        "error_low": -1.8
+      },
+      "width": {
+        "error_high": 0.08,
+        "display_name": "Width (ms)",
+        "value": 1.43,
+        "error_low": -0.08
+      },
+      "timestamp": {
+        "value": "2018-10-30 04:16:21.6546"
+      },
+      "scattering_time": {
+        "value": "<1.6",
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "error_high": 1.4,
+        "error_low": -1.4,
+        "value": 3.1,
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 10.1684713364,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.3,
+        "value": 103.7,
+        "error_low": -0.3
+      }
+    },
+    "200122A": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "timestamp": {
+        "value": "2020-01-22 10:27:00.442762"
+      },
+      "snr": {
+        "value": 17.3098144531,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "value": 101.9023132324,
+        "display_name": "DM (pc/cc)"
+      }
+    },
+    "200122B": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.336561203
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-01-22 10:28:20.297065"
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "value": 106.7548065186,
+        "error_low": 3.234994173
+      }
+    },
+    "200122C": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2020-01-22 22:09:30.870123"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 101.9023132324,
+        "error_low": 1.6174970865
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.1126089096
+      }
+    },
+    "200122D": {
+      "snr": {
+        "value": 10.4189882278,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-01-22 22:09:52.402631"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173,
+        "error_high": 3.234994173,
+        "value": 106.7548065186
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "200122E": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.8954267502
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 105.1373138428,
+        "error_low": 1.6174970865
+      },
+      "timestamp": {
+        "value": "2020-01-22 22:22:21.384739"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "200122F": {
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 101.9023132324,
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "timestamp": {
+        "value": "2020-01-22 22:23:20.335682"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.4666051865,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/1908.03507.pdf",
+      "display_name": "Publication"
+    },
+    "gb": {
+      "value": 40.9
+    },
+    "ne2001": {
+      "value": 40
+    },
+    "ymw16": {
+      "value": 32
+    },
+    "ra": {
+      "value": "10:54",
+      "display_name": "RA (deg)"
+    },
+    "gl": {
+      "value": 133.4
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 103.5
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "previous_name": {
+      "value": "181030.J1054+73",
+      "display_name": "Previous Name"
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+73:44"
+    }
+  },
+  "FRB20181119A": {
+    "181119": {
+      "width": {
+        "value": 6.3,
+        "display_name": "Width (ms)",
+        "error_high": 0.6,
+        "error_low": -0.6
+      },
+      "snr": {
+        "value": 11.0591945648,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_high": 0.2,
+        "value": 0.3,
+        "error_low": -0.2
+      },
+      "fluence": {
+        "error_high": 0.8,
+        "error_low": -0.8,
+        "value": 1.8,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2018-11-19 16:49:03.1914"
+      },
+      "scattering_time": {
+        "value": "<7.5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "error_high": 1,
+        "display_name": "DM (pc/cc)",
+        "error_low": -1,
+        "value": 364.2
+      }
+    },
+    "190103": {
+      "snr": {
+        "value": 15.665345192,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -1.2,
+        "error_high": 1.2,
+        "value": 2.5
+      },
+      "dm": {
+        "value": 364,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.3,
+        "error_high": 0.3
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<2.8"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_high": 0.3,
+        "value": 0.6,
+        "error_low": -0.3
+      },
+      "timestamp": {
+        "value": "2019-01-03 13:47:23.3225"
+      },
+      "width": {
+        "error_high": 0.1,
+        "display_name": "Width (ms)",
+        "error_low": -0.1,
+        "value": 2.66
+      }
+    },
+    "190313": {
+      "snr": {
+        "value": 9.3810758591,
+        "display_name": "SNR"
+      },
+      "width": {
+        "error_low": -0.2,
+        "display_name": "Width (ms)",
+        "value": 1.5,
+        "error_high": 0.2
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 364.2,
+        "error_high": 0.6,
+        "error_low": -0.6
+      },
+      "flux": {
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2,
+        "value": 0.4
+      },
+      "scattering_time": {
+        "value": "<1.9",
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-03-13 09:21:46.7250"
+      },
+      "fluence": {
+        "value": 1,
+        "error_low": -0.5,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 0.5
+      }
+    },
+    "190926": {
+      "timestamp": {
+        "value": "2019-09-26 20:19:28.747694"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "value": 368.7893371582
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 9.3109169006,
+        "display_name": "SNR"
+      }
+    },
+    "191202": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-12-02 15:44:29.327498"
+      },
+      "dm": {
+        "error_high": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "error_low": 12.9399766922,
+        "value": 375.2593078613
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 7.5453548431
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "191205": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "value": 8.3239345551,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-12-05 15:44:15.105858"
+      },
+      "dm": {
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461,
+        "value": 368.7893371582,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200621": {
+      "timestamp": {
+        "value": "2020-06-21 02:39:02.417397"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "value": 363.9368286133,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 11.8447504044,
+        "display_name": "SNR"
+      }
+    },
+    "201204": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "value": 363.5324707031,
+        "error_low": 0.4043742716,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.4043742716
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.4697732925,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2020-12-04 15:49:20.254679"
+      }
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "12:42"
+    },
+    "gb": {
+      "value": 52
+    },
+    "gl": {
+      "value": 124.5
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "ymw16": {
+      "value": 26
+    },
+    "previous_name": {
+      "value": "181119.J12+65",
+      "display_name": "Previous Name"
+    },
+    "ne2001": {
+      "value": 34
+    },
+    "dec": {
+      "value": "+65:08",
+      "display_name": "Dec (deg)"
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/1908.03507.pdf",
+      "display_name": "Publication"
+    },
+    "dm": {
+      "value": 364.05,
+      "display_name": "DM (pc/cc)"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    }
+  },
+  "FRB20181128A": {
+    "181128": {
+      "flux": {
+        "error_low": -0.3,
+        "error_high": 0.3,
+        "value": 0.5,
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 23.374414444
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_high": 0.16,
+        "value": 2.43,
+        "error_low": -0.16
+      },
+      "timestamp": {
+        "value": "2019-11-28 08:27:41.74"
+      },
+      "dm": {
+        "value": 450.2,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.3,
+        "error_high": 0.3
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<2.8"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": 4.4,
+        "error_high": 2.2,
+        "error_low": -2.2
+      }
+    },
+    "181219": {
+      "snr": {
+        "value": 10.2496137619,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "error_low": -0.2,
+        "value": 0.3,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.2
+      },
+      "width": {
+        "value": 5.5,
+        "display_name": "Width (ms)",
+        "error_high": 0.7,
+        "error_low": -0.7
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.3,
+        "value": 450.8,
+        "error_low": -0.3
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<6.9"
+      },
+      "fluence": {
+        "value": 2.5,
+        "error_high": 1.2,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -1.2
+      },
+      "timestamp": {
+        "value": "2018-12-19 07:04:41.6780"
+      }
+    },
+    "190302": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2019-03-02 02:19:57.107653"
+      },
+      "dm": {
+        "error_low": 12.9399766922,
+        "error_high": 12.9399766922,
+        "display_name": "DM (pc/cc)",
+        "value": 452.8991699219
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.2023172379
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "190527": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.4012069702
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "value": 449.6641845703,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)"
+      },
+      "timestamp": {
+        "value": "2019-05-27 20:39:41.688788"
+      }
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "04:56"
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "gb": {
+      "value": 12.4
+    },
+    "gl": {
+      "value": 146.6
+    },
+    "ymw16": {
+      "value": 150
+    },
+    "dm": {
+      "value": 450.5,
+      "display_name": "DM (pc/cc)"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "181128.J0456+63"
+    },
+    "ne2001": {
+      "value": 110
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/1908.03507.pdf"
+    },
+    "dec": {
+      "value": "+63:23",
+      "display_name": "Dec (deg)"
+    }
+  },
+  "FRB20190116B": {
+    "190116A": {
+      "width": {
+        "value": 4,
+        "error_low": -0.5,
+        "display_name": "Width (ms)",
+        "error_high": 0.5
+      },
+      "snr": {
+        "value": 15.7560081482,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": 0.8,
+        "error_low": -0.4,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 0.4
+      },
+      "scattering_time": {
+        "value": "<11",
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 444,
+        "error_low": -0.6,
+        "error_high": 0.6
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": 0.3,
+        "error_high": 0.2,
+        "error_low": -0.2
+      },
+      "timestamp": {
+        "value": "2019-01-16 13:07:33.833"
+      }
+    },
+    "190116B": {
+      "dm": {
+        "error_low": -0.8,
+        "error_high": 0.8,
+        "display_name": "DM (pc/cc)",
+        "value": 443.6
+      },
+      "width": {
+        "value": 1.5,
+        "error_low": -0.3,
+        "error_high": 0.3,
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2019-01-16 13:08:20.4129"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.7"
+      },
+      "flux": {
+        "value": 0.4,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2
+      },
+      "fluence": {
+        "error_low": -1.4,
+        "value": 2.8,
+        "error_high": 1.4,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 12.8582296371,
+        "display_name": "SNR"
+      }
+    },
+    "previous_name": {
+      "value": "190116.J1249+27",
+      "display_name": "Previous Name"
+    },
+    "gl": {
+      "value": 210.5
+    },
+    "gb": {
+      "value": 89.5
+    },
+    "ymw16": {
+      "value": 20
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/1908.03507.pdf"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+27:09"
+    },
+    "ne2001": {
+      "value": 20
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "12:49"
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 441
+    }
+  },
+  "FRB20190117A": {
+    "190117": {
+      "flux": {
+        "value": 1.7,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.6,
+        "error_low": -0.6
+      },
+      "fluence": {
+        "error_high": 1.6,
+        "error_low": -1.6,
+        "value": 5.9,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "value": "<1.5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 24.2107696533,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-01-17 22:18:26.46617"
+      },
+      "width": {
+        "value": 1.44,
+        "error_low": -0.03,
+        "error_high": 0.03,
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_high": 0.1,
+        "error_low": -0.1,
+        "value": 393.3,
+        "display_name": "DM (pc/cc)"
+      }
+    },
+    "190630": {
+      "dm": {
+        "error_low": 0.6,
+        "display_name": "DM (pc/cc)",
+        "error_high": -0.6,
+        "value": 392.6
+      },
+      "timestamp": {
+        "value": "2019-06-30 11:34:38.8739"
+      },
+      "fluence": {
+        "error_high": 1.3,
+        "error_low": -1.3,
+        "display_name": "Fluence (Jy ms)",
+        "value": 6.7
+      },
+      "scattering_time": {
+        "error_high": 0.5,
+        "value": 5,
+        "error_low": -0.5,
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 19.426815033
+      },
+      "flux": {
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "value": 0.6,
+        "error_low": -0.2
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": "<1.3"
+      }
+    },
+    "190810": {
+      "timestamp": {
+        "value": "2019-08-10 08:52:24.060"
+      },
+      "width": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "value": 3.2,
+        "display_name": "Width (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": 5,
+        "error_high": 1.4,
+        "error_low": -1.4
+      },
+      "dm": {
+        "error_low": -0.2,
+        "value": 392.9,
+        "error_high": 0.2,
+        "display_name": "DM (pc/cc)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": 0.7,
+        "error_high": 0.3,
+        "error_low": -0.3
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "error_high": 0.3,
+        "value": 3.7,
+        "error_low": -0.3
+      },
+      "snr": {
+        "value": 31.5307121277,
+        "display_name": "SNR"
+      }
+    },
+    "190815": {
+      "timestamp": {
+        "value": "2019-08-15 08:33:46.5997"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.2,
+        "error_low": -0.2,
+        "value": 395.2
+      },
+      "fluence": {
+        "error_low": -2.2,
+        "display_name": "Fluence (Jy ms)",
+        "value": 9.1,
+        "error_high": 2.2
+      },
+      "scattering_time": {
+        "error_low": -0.7,
+        "error_high": 0.7,
+        "display_name": "Scattering Time (ms)",
+        "value": 1.9
+      },
+      "flux": {
+        "error_high": 0.4,
+        "value": 1.4,
+        "error_low": -0.4,
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 28.0054588318
+      },
+      "width": {
+        "value": 2.56,
+        "display_name": "Width (ms)",
+        "error_high": 0.13,
+        "error_low": -0.13
+      }
+    },
+    "190824": {
+      "width": {
+        "error_low": -1.1,
+        "error_high": 1.1,
+        "display_name": "Width (ms)",
+        "value": 5.2
+      },
+      "scattering_time": {
+        "value": "<7.4",
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 9.0811605453,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.7,
+        "value": 396.5,
+        "error_high": 0.7
+      },
+      "timestamp": {
+        "value": "2019-08-24 07:58:55.880"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_low": -0.3,
+        "error_high": 0.3,
+        "value": 0.6
+      },
+      "fluence": {
+        "error_high": 1.1,
+        "error_low": -1.1,
+        "display_name": "Fluence (Jy ms)",
+        "value": 5.1
+      }
+    },
+    "191223": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 9.2867593765,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "value": 394.6692810059
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-12-23 00:07:07.130260"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      }
+    },
+    "ra": {
+      "value": "22:07",
+      "display_name": "RA (deg)"
+    },
+    "ymw16": {
+      "value": 40
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "dm": {
+      "value": 393.6,
+      "display_name": "DM (pc/cc)"
+    },
+    "ne2001": {
+      "value": 48
+    },
+    "previous_name": {
+      "value": "190117.J2207+17",
+      "display_name": "Previous Name"
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/2001.03595.pdf",
+      "display_name": "Publication"
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "gl": {
+      "value": 76.4
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+17:23"
+    },
+    "gb": {
+      "value": -30.3
+    }
+  },
+  "FRB20190208A": {
+    "190208": {
+      "timestamp": {
+        "value": "2019-02-08 17:41:42.300"
+      },
+      "dm": {
+        "error_low": -0.2,
+        "value": 579.9,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.2
+      },
+      "snr": {
+        "value": 12.1974687576,
+        "display_name": "SNR"
+      },
+      "width": {
+        "error_high": 0.16,
+        "display_name": "Width (ms)",
+        "error_low": -0.16,
+        "value": 0.62
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.8"
+      },
+      "flux": {
+        "error_low": -0.2,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.2,
+        "value": 0.4
+      },
+      "fluence": {
+        "error_high": 0.6,
+        "value": 1.4,
+        "error_low": -0.6,
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "190406": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 13.0775632858
+      },
+      "dm": {
+        "error_low": -0.2,
+        "display_name": "DM (pc/cc)",
+        "value": 580.2,
+        "error_high": 0.2
+      },
+      "flux": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "display_name": "Flux (mJy)",
+        "value": 0.6
+      },
+      "timestamp": {
+        "value": "2019-04-06 13:55:15.0416"
+      },
+      "width": {
+        "error_low": -0.14,
+        "error_high": 0.14,
+        "value": 1.31,
+        "display_name": "Width (ms)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.6"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.8,
+        "error_high": 0.8,
+        "value": 2
+      }
+    },
+    "200124": {
+      "timestamp": {
+        "value": "2020-01-24 18:42:58.256972"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 15.4886417389,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "value": 575.8289794922,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461
+      }
+    },
+    "200314": {
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 29.3013477325
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "value": 575.8289794922,
+        "display_name": "DM (pc/cc)",
+        "error_high": 6.4699883461
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2020-03-14 15:22:41.273746"
+      }
+    },
+    "200422": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 11.3795499802,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "value": 580.6814575195,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865
+      },
+      "timestamp": {
+        "value": "2020-04-22 12:46:11.440916"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      }
+    },
+    "200513": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "value": 13.6830329895,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 580.6814575195
+      },
+      "timestamp": {
+        "value": "2020-05-13 11:24:33.224419"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      }
+    },
+    "210203": {
+      "dm": {
+        "error_low": 0.4043742716,
+        "value": 579.4683227539,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.4043742716
+      },
+      "snr": {
+        "value": 12.8146190643,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2021-02-03 17:58:11.178281"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "ra": {
+      "value": "18:55",
+      "display_name": "RA (deg)"
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 580.05
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+46:58"
+    },
+    "ymw16": {
+      "value": 66
+    },
+    "gb": {
+      "value": 18.9
+    },
+    "ne2001": {
+      "value": 72
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190208.J1855+46"
+    },
+    "gl": {
+      "value": 76.8
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/2001.03595.pdf",
+      "display_name": "Publication"
+    }
+  },
+  "FRB20190209A": {
+    "190209": {
+      "snr": {
+        "value": 11.8159723282,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-02-09 08:20:20.977"
+      },
+      "dm": {
+        "error_high": 0.6,
+        "error_low": -0.6,
+        "display_name": "DM (pc/cc)",
+        "value": 424.6
+      },
+      "fluence": {
+        "error_low": -1,
+        "value": 2,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1
+      },
+      "flux": {
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.2,
+        "value": 0.4
+      },
+      "scattering_time": {
+        "value": "<4.7",
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "error_low": -0.5,
+        "error_high": 0.5,
+        "display_name": "Width (ms)",
+        "value": 3.7
+      }
+    },
+    "190210": {
+      "snr": {
+        "value": 10.0713567734,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<12"
+      },
+      "fluence": {
+        "value": 0.5,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.3,
+        "error_high": 0.3
+      },
+      "timestamp": {
+        "value": "2019-02-10 08:17:13.907"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "error_low": -0.4,
+        "error_high": 0.4,
+        "value": 0.6
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.5,
+        "value": 425.2,
+        "error_high": 0.5
+      },
+      "width": {
+        "error_high": 1.4,
+        "display_name": "Width (ms)",
+        "value": 9.4,
+        "error_low": -1.4
+      }
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+77:40"
+    },
+    "gl": {
+      "value": 134.2
+    },
+    "ne2001": {
+      "value": 46
+    },
+    "previous_name": {
+      "value": "190209.J0937+77",
+      "display_name": "Previous Name"
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/1908.03507.pdf"
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 425
+    },
+    "ymw16": {
+      "value": 39
+    },
+    "ra": {
+      "value": "09:37",
+      "display_name": "RA (deg)"
+    },
+    "gb": {
+      "value": 34.8
+    }
+  },
+  "FRB20190212A": {
+    "190212": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.9199762344
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 300.8544616699,
+        "error_high": 3.234994173,
+        "error_low": 3.234994173
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-02-12 16:17:23.000000"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "190213": {
+      "fluence": {
+        "error_high": 1,
+        "value": 2.5,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -1
+      },
+      "flux": {
+        "error_high": 0.6,
+        "display_name": "Flux (mJy)",
+        "value": 1.1,
+        "error_low": -0.6
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 9.530207634
+      },
+      "scattering_time": {
+        "error_high": 0.1,
+        "display_name": "Scattering Time (ms)",
+        "error_low": -0.1,
+        "value": 0.4
+      },
+      "timestamp": {
+        "value": "2019-02-13 17:09:28.419"
+      },
+      "dm": {
+        "value": 301.4,
+        "error_high": 0.2,
+        "error_low": -0.2,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "value": 2.1,
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "display_name": "Width (ms)"
+      }
+    },
+    "190516": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.5298852921,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "value": 302.4719543457,
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-05-16 10:35:47.281909"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "191018": {
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "value": 302.4719543457,
+        "error_high": 1.6174970865
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "snr": {
+        "value": 18.1180667877,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-10-18 18:33:33.305661"
+      }
+    },
+    "191217": {
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 18.9751853943
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2019-12-17 08:38:55.858723"
+      },
+      "dm": {
+        "value": 304.0894470215,
+        "display_name": "DM (pc/cc)",
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461
+      }
+    },
+    "191220": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-12-20 08:37:39.792071"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "value": 304.0894470215,
+        "error_low": 6.4699883461
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.0622282028
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200724": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-07-24 06:46:38.367902"
+      },
+      "dm": {
+        "value": 302.4719543457,
+        "display_name": "DM (pc/cc)",
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.1905498505,
+        "display_name": "SNR"
+      }
+    },
+    "200725": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.8151903152,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "value": 300.8544616699,
+        "display_name": "DM (pc/cc)",
+        "error_low": 3.234994173
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-07-25 05:38:55.926594"
+      }
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "gb": {
+      "value": 27.8
+    },
+    "dec": {
+      "value": "+81:26",
+      "display_name": "Dec (deg)"
+    },
+    "ymw16": {
+      "value": 44
+    },
+    "ra": {
+      "value": "18:24",
+      "display_name": "RA (deg)"
+    },
+    "gl": {
+      "value": 113.3
+    },
+    "dm": {
+      "value": 302,
+      "display_name": "DM (pc/cc)"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190212.J18+81"
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/2001.03595.pdf"
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "ne2001": {
+      "value": 49
+    }
+  },
+  "FRB20190213A": {
+    "190212": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "error_high": 0.3,
+        "error_low": -0.3,
+        "display_name": "Fluence (Jy ms)",
+        "value": 0.6
+      },
+      "timestamp": {
+        "value": "2019-02-12 00:42:17.295"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_high": 2,
+        "value": 10,
+        "error_low": -2
+      },
+      "snr": {
+        "value": 9.9199762344,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "value": 651.1,
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.4,
+        "error_high": 0.4
+      },
+      "scattering_time": {
+        "value": "<2.2",
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "190515": {
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.0712804794
+      },
+      "scattering_time": {
+        "error_high": 1.1,
+        "value": 4,
+        "display_name": "Scattering Time (ms)",
+        "error_low": -1.1
+      },
+      "timestamp": {
+        "value": "2019-05-15 18:33:37.853"
+      },
+      "flux": {
+        "error_high": 0.3,
+        "value": 0.5,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.3
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.4,
+        "value": 651.5,
+        "error_high": 0.4
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": "<4"
+      },
+      "fluence": {
+        "error_low": -1.2,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 1.2,
+        "value": 3
+      }
+    },
+    "ne2001": {
+      "value": 43
+    },
+    "gl": {
+      "value": 148.1
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 651.45
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "ymw16": {
+      "value": 34
+    },
+    "gb": {
+      "value": -38.7
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/2001.03595.pdf"
+    },
+    "dec": {
+      "value": "+20:04",
+      "display_name": "Dec (deg)"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190213.J02+20"
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "02:14"
+    }
+  },
+  "FRB20190222A": {
+    "190222": {
+      "fluence": {
+        "value": 7.5,
+        "error_high": 2.3,
+        "error_low": -2.3,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "error_low": -0.6,
+        "value": 1.9,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.6
+      },
+      "width": {
+        "error_low": -0.09,
+        "display_name": "Width (ms)",
+        "value": 2.97,
+        "error_high": 0.09
+      },
+      "timestamp": {
+        "value": "2019-02-22 18:46:01.3679"
+      },
+      "snr": {
+        "value": 31.1966075897,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_high": 0.1,
+        "value": 460.6,
+        "error_low": -0.1,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "value": "<3.2",
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "190301": {
+      "scattering_time": {
+        "value": "<2.6",
+        "display_name": "Scattering Time (ms)"
+      },
+      "timestamp": {
+        "value": "2019-03-01 18:03:02.4799"
+      },
+      "fluence": {
+        "error_low": -1.3,
+        "error_high": 1.3,
+        "value": 3.4,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 17.8612575531,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": 2.44,
+        "error_low": -0.08,
+        "display_name": "Width (ms)",
+        "error_high": 0.08
+      },
+      "dm": {
+        "error_high": 0.4,
+        "error_low": -0.4,
+        "display_name": "DM (pc/cc)",
+        "value": 459.8
+      },
+      "flux": {
+        "value": 1.4,
+        "display_name": "Flux (mJy)",
+        "error_low": -0.5,
+        "error_high": 0.5
+      }
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/1908.03507.pdf"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190222.J2052+69"
+    },
+    "ne2001": {
+      "value": 87
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 460.6
+    },
+    "gl": {
+      "value": 104.9
+    },
+    "ymw16": {
+      "value": 100
+    },
+    "ra": {
+      "value": "20:52",
+      "display_name": "RA (deg)"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+69:50"
+    },
+    "gb": {
+      "value": 15.9
+    }
+  },
+  "FRB20190303A": {
+    "190303": {
+      "timestamp": {
+        "value": "2019-03-03 11:05:13.695"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_high": 0.3,
+        "value": 2,
+        "error_low": -0.3
+      },
+      "scattering_time": {
+        "value": 1.8,
+        "error_low": -0.7,
+        "error_high": 0.7,
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "error_low": -0.9,
+        "value": 2.3,
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 0.9
+      },
+      "flux": {
+        "value": 0.5,
+        "error_low": -0.3,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.3
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 11.2301845551
+      },
+      "dm": {
+        "value": 221.8,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.5,
+        "error_low": -0.5
+      }
+    },
+    "190421": {
+      "scattering_time": {
+        "value": "<4.5",
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "error_low": -0.3,
+        "display_name": "Width (ms)",
+        "value": 3.1,
+        "error_high": 0.3
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 223.5,
+        "error_low": -0.3,
+        "error_high": 0.3
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_high": 0.5,
+        "error_low": -0.5,
+        "value": 2
+      },
+      "snr": {
+        "value": 12.2740383148,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)",
+        "value": 0.4
+      },
+      "timestamp": {
+        "value": "2019-04-21 08:00:07.2616"
+      }
+    },
+    "190702": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<5.1"
+      },
+      "fluence": {
+        "error_high": 0.8,
+        "value": 3.1,
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.8
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 18.4642982483
+      },
+      "timestamp": {
+        "value": "2019-07-02 03:14:39.7628"
+      },
+      "flux": {
+        "value": 0.5,
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_low": -0.3,
+        "value": 4.5,
+        "error_high": 0.3
+      },
+      "dm": {
+        "error_low": -0.2,
+        "display_name": "DM (pc/cc)",
+        "value": 222.4,
+        "error_high": 0.2
+      }
+    },
+    "191013": {
+      "timestamp": {
+        "value": "2019-10-13 20:31:26.275515"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 9.7387590408,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "value": 226.4495849609,
+        "display_name": "DM (pc/cc)"
+      }
+    },
+    "191020": {
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "value": 221.5971069336,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 22.8852844238,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-10-20 19:48:50.883678"
+      }
+    },
+    "191029": {
+      "dm": {
+        "error_low": 1.6174970865,
+        "error_high": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 221.5971069336
+      },
+      "timestamp": {
+        "value": "2019-10-29 19:24:06.307092"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 8.6925535202,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "191110": {
+      "dm": {
+        "error_low": 6.4699883461,
+        "error_high": 6.4699883461,
+        "value": 226.4495849609,
+        "display_name": "DM (pc/cc)"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2019-11-10 18:33:01.522606"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "value": 20.5123291016,
+        "display_name": "SNR"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "191113": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 226.4495849609,
+        "display_name": "DM (pc/cc)",
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461
+      },
+      "timestamp": {
+        "value": "2019-11-13 18:12:27.576391"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "snr": {
+        "value": 13.4969520569,
+        "display_name": "SNR"
+      }
+    },
+    "191116": {
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 28.7652683258
+      },
+      "timestamp": {
+        "value": "2019-11-16 18:09:51.183575"
+      },
+      "dm": {
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)",
+        "value": 221.5971069336
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      }
+    },
+    "191117": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2019-11-17 18:18:31.470272"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461,
+        "display_name": "DM (pc/cc)",
+        "value": 226.4495849609
+      },
+      "snr": {
+        "value": 12.0818834305,
+        "display_name": "SNR"
+      }
+    },
+    "191215": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 223.2145996094,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "error_high": 3.234994173
+      },
+      "timestamp": {
+        "value": "2019-12-15 16:13:43.383854"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "snr": {
+        "value": 15.1236248016,
+        "display_name": "SNR"
+      }
+    },
+    "191231": {
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "value": 223.2145996094,
+        "error_high": 3.234994173,
+        "error_low": 3.234994173
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "timestamp": {
+        "value": "2019-12-31 15:17:49.518761"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.3237524033
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "200112": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "error_high": 3.234994173,
+        "error_low": 3.234994173,
+        "display_name": "DM (pc/cc)",
+        "value": 223.2145996094
+      },
+      "timestamp": {
+        "value": "2020-01-12 14:26:34.117442"
+      },
+      "snr": {
+        "value": 12.4492053986,
+        "display_name": "SNR"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      }
+    },
+    "200613": {
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461,
+        "value": 226.4495849609
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 8.0921564102
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-06-13 04:30:36.267056"
+      }
+    },
+    "200622": {
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "timestamp": {
+        "value": "2020-06-22 03:51:52.524667"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "dm": {
+        "value": 221.5971069336,
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 10.3886995316,
+        "display_name": "SNR"
+      }
+    },
+    "200909": {
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "error_high": 6.4699883461,
+        "error_low": 6.4699883461,
+        "value": 226.4495849609,
+        "display_name": "DM (pc/cc)"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "value": {}
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.147819519
+      },
+      "timestamp": {
+        "value": "2020-09-09 22:30:03.587742"
+      }
+    },
+    "210209": {
+      "timestamp": {
+        "value": "2021-02-09 12:33:26.784809"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": 0.4043742716,
+        "error_high": 0.4043742716,
+        "value": 221.1927185059
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 21.8594741821
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      }
+    },
+    "210209A": {
+      "timestamp": {
+        "value": "2021-02-09 12:04:41.518149"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "dm": {
+        "value": 383.3468017578,
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 12.7987031937
+      }
+    },
+    "ymw16": {
+      "value": 22
+    },
+    "ne2001": {
+      "value": 29
+    },
+    "gl": {
+      "value": 97.5
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "13:53"
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190303.J1353+48"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/2001.03595.pdf"
+    },
+    "dec": {
+      "value": "+48:15",
+      "display_name": "Dec (deg)"
+    },
+    "gb": {
+      "value": 65.7
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 222.4
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    }
+  },
+  "FRB20190417A": {
+    "190417": {
+      "timestamp": {
+        "value": "2019-04-17 13:55:44.814"
+      },
+      "snr": {
+        "value": 13.3820714951,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "error_high": 0.8,
+        "error_low": -0.8,
+        "display_name": "Fluence (Jy ms)",
+        "value": 4.4
+      },
+      "flux": {
+        "value": 0.5,
+        "error_low": -0.2,
+        "error_high": 0.2,
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "error_high": 1.1,
+        "display_name": "Scattering Time (ms)",
+        "error_low": -1.1,
+        "value": 3.1
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_low": -0.9,
+        "value": 3.3,
+        "error_high": 0.9
+      },
+      "dm": {
+        "error_high": 0.2,
+        "value": 1378.1,
+        "error_low": -0.2,
+        "display_name": "DM (pc/cc)"
+      }
+    },
+    "190806": {
+      "flux": {
+        "error_high": 0.2,
+        "value": 0.4,
+        "error_low": -0.2,
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<15"
+      },
+      "timestamp": {
+        "value": "2019-08-06 06:36:49.674"
+      },
+      "dm": {
+        "error_low": -0.1,
+        "display_name": "DM (pc/cc)",
+        "error_high": 0.1,
+        "value": 1379
+      },
+      "width": {
+        "error_low": -3,
+        "display_name": "Width (ms)",
+        "value": 9,
+        "error_high": 3
+      },
+      "snr": {
+        "value": 9.1056194305,
+        "display_name": "SNR"
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.7,
+        "value": 3.2,
+        "error_high": 0.7
+      }
+    },
+    "190929": {
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": "<1.3"
+      },
+      "snr": {
+        "value": 11.4487638474,
+        "display_name": "SNR"
+      },
+      "timestamp": {
+        "value": "2019-09-29 03:14:15.846"
+      },
+      "width": {
+        "value": 1.19,
+        "error_high": 0.02,
+        "display_name": "Width (ms)",
+        "error_low": -0.02
+      },
+      "fluence": {
+        "display_name": "Fluence (Jy ms)",
+        "error_low": -0.4,
+        "value": 1.7,
+        "error_high": 0.4
+      },
+      "flux": {
+        "value": 0.7,
+        "error_low": -0.2,
+        "display_name": "Flux (mJy)",
+        "error_high": 0.2
+      },
+      "dm": {
+        "error_high": 0.3,
+        "value": 1378.5,
+        "error_low": -0.3,
+        "display_name": "DM (pc/cc)"
+      }
+    },
+    "200124": {
+      "timestamp": {
+        "value": "2020-01-24 19:24:33.448422"
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "value": {}
+      },
+      "snr": {
+        "value": 8.0176277161,
+        "display_name": "SNR"
+      },
+      "dm": {
+        "error_low": 6.4699883461,
+        "value": 1378.1075439453,
+        "error_high": 6.4699883461,
+        "display_name": "DM (pc/cc)"
+      },
+      "scattering_time": {
+        "display_name": "Scattering Time (ms)",
+        "value": {}
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      }
+    },
+    "200726": {
+      "snr": {
+        "value": 17.9751396179,
+        "display_name": "SNR"
+      },
+      "width": {
+        "value": {},
+        "display_name": "Width (ms)"
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_high": 1.6174970865,
+        "error_low": 1.6174970865,
+        "value": 1376.4899902344
+      },
+      "fluence": {
+        "value": {},
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2020-07-26 07:21:42.417566"
+      },
+      "flux": {
+        "value": {},
+        "display_name": "Flux (mJy)"
+      },
+      "scattering_time": {
+        "value": {},
+        "display_name": "Scattering Time (ms)"
+      }
+    },
+    "ymw16": {
+      "value": 80
+    },
+    "localized": {
+      "display_name": "Localized",
+      "value": "0"
+    },
+    "dec": {
+      "value": "+59:24",
+      "display_name": "Dec (deg)"
+    },
+    "gl": {
+      "value": 91.5
+    },
+    "gb": {
+      "value": 17.4
+    },
+    "publication": {
+      "display_name": "Publication",
+      "value": "https://arxiv.org/pdf/2001.03595.pdf"
+    },
+    "last_burst_date": {
+      "value": {},
+      "display_name": "Previous Burst"
+    },
+    "dm": {
+      "display_name": "DM (pc/cc)",
+      "value": 1378.2
+    },
+    "previous_name": {
+      "value": "190417.J1939+59",
+      "display_name": "Previous Name"
+    },
+    "ra": {
+      "display_name": "RA (deg)",
+      "value": "19:39"
+    },
+    "ne2001": {
+      "value": 78
+    }
+  },
+  "FRB20190604A": {
+    "190604": {
+      "scattering_time": {
+        "value": 1.7,
+        "display_name": "Scattering Time (ms)",
+        "error_high": 0.4,
+        "error_low": -0.4
+      },
+      "timestamp": {
+        "value": "2019-06-04 05:49:49.2554"
+      },
+      "dm": {
+        "error_high": 0.2,
+        "display_name": "DM (pc/cc)",
+        "value": 552.6,
+        "error_low": -0.2
+      },
+      "width": {
+        "display_name": "Width (ms)",
+        "error_low": -0.4,
+        "error_high": 0.4,
+        "value": 3
+      },
+      "fluence": {
+        "error_low": -2.8,
+        "error_high": 2.8,
+        "value": 8.3,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "flux": {
+        "error_low": -0.4,
+        "display_name": "Flux (mJy)",
+        "value": 0.9,
+        "error_high": 0.4
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 33.7928009033
+      }
+    },
+    "190606": {
+      "width": {
+        "value": 1.2,
+        "error_high": 0.5,
+        "display_name": "Width (ms)",
+        "error_low": -0.5
+      },
+      "dm": {
+        "display_name": "DM (pc/cc)",
+        "error_low": -0.2,
+        "value": 552.7,
+        "error_high": 0.2
+      },
+      "snr": {
+        "display_name": "SNR",
+        "value": 10.650604248
+      },
+      "scattering_time": {
+        "value": "<2.2",
+        "display_name": "Scattering Time (ms)"
+      },
+      "flux": {
+        "display_name": "Flux (mJy)",
+        "value": 0.6,
+        "error_high": 0.3,
+        "error_low": -0.3
+      },
+      "fluence": {
+        "value": 1.7,
+        "error_low": -0.7,
+        "error_high": 0.7,
+        "display_name": "Fluence (Jy ms)"
+      },
+      "timestamp": {
+        "value": "2019-06-06 05:34:23.574"
+      }
+    },
+    "localized": {
+      "value": "0",
+      "display_name": "Localized"
+    },
+    "ymw16": {
+      "value": 24
+    },
+    "gb": {
+      "value": 57.6
+    },
+    "ra": {
+      "value": "14:35",
+      "display_name": "RA (deg)"
+    },
+    "dec": {
+      "display_name": "Dec (deg)",
+      "value": "+53:17"
+    },
+    "last_burst_date": {
+      "display_name": "Previous Burst",
+      "value": {}
+    },
+    "dm": {
+      "value": 552.65,
+      "display_name": "DM (pc/cc)"
+    },
+    "ne2001": {
+      "value": 32
+    },
+    "gl": {
+      "value": 93.8
+    },
+    "previous_name": {
+      "display_name": "Previous Name",
+      "value": "190604.J1435+53"
+    },
+    "publication": {
+      "value": "https://arxiv.org/pdf/2001.03595.pdf",
+      "display_name": "Publication"
+    }
+  }
+}
