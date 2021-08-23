@@ -165,24 +165,13 @@ def get_catalogs(rem_subbursts=True, return_dataframes=False):
     [frbs_all['mjd'].append(mjd_121102) for mjd_121102 in frb121102_brsts.mjd.values]
 
     #creating repeater bool array: True=repeater, False=non-repeater
-    unique_frbs, ind, n_frbs = np.unique(frbcat['frb_name'].values, 
-                                         return_counts=True, return_index=True)
-    msk=n_frbs==1
-    non_rep=frbcat['frb_name'][frbcat['frb_name'].index[np.sort(ind[msk])]].values
-    for name in frbcat['frb_name']: 
-        if name in non_rep: frbs_all['repeater'].append(False)
-        else: frbs_all['repeater'].append(True)
-        
-    unique_frbs, ind, n_frbs = np.unique(chimecat1_names, return_counts=True, return_index=True)
-    msk=n_frbs==1
-    non_rep=[chimecat1_names[m] for m in np.where(msk)[0]]
-    for name in chimecat1_names: 
-        if name == 'FRB20190417A': frbs_all['repeater'].append(True)
-        elif name in non_rep: frbs_all['repeater'].append(False)
-        else: frbs_all['repeater'].append(True)
-        
-    [frbs_all['repeater'].append(True) for i in range(len(chime_rep['src']))]
-    [frbs_all['repeater'].append(True) for i in range(len(frb121102_brsts))]
+    unique_frbs, ind, n_frbs = np.unique(frbs_all['src'], return_counts=True, return_index=True)
+    msk=n_frbs!=1
+    rep=np.sort([frbs_all['src'][m] for m in ind[np.where(msk)[0]]])
+    
+    for name in frbs_all['src']: 
+        if name in rep: frbs_all['repeater'].append(True)
+        else: frbs_all['repeater'].append(False)
 
     frbs_all_data=pd.DataFrame.from_dict(data=frbs_all)
     frbs_all_data.to_csv('./catalog/frbs_all.csv',index=False)  
@@ -231,5 +220,19 @@ def get_catalogs(rem_subbursts=True, return_dataframes=False):
         return frbs_all_data, frb121102_bursts, spatial_priors_frbs, frbs_excl
     else: return
     
-    
+
+#####################################################################        
+#load catalog csv file - default is load all if not specified
+def load_frbs(**kw):
+    if 'spatial_priors' in kw.keys(): 
+        frbs = pd.read_csv('./catalog/spatial_priors_frbs.csv')
+    elif 'frb121102' in kw.keys():
+        frbs = pd.read_csv('./catalog/frb121102_bursts.csv')
+    elif 'others' in kw.keys(): 
+        frbs = pd.read_csv('./catalog/frbs_excl_sppriors_121102.csv')
+    elif 'all' in kw.keys(): frbs = pd.read_csv('./catalog/frbs_all.csv')
+    else: 
+        frbs = pd.read_csv('./catalog/frbs_all.csv')
+        print('Loading all FRBs from catalogs')    
+    return frbs
     
