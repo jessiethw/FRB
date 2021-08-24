@@ -12,7 +12,7 @@ import csky as cy
 
 
 #######################################################################
-#generate backgroud trials
+#generate backgroud trials, w/out spatial prior
 def scan_bg(src, n_trials=10000, frb_name = ' ', print_plot=False):
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'],src=src)
     
@@ -43,3 +43,37 @@ def scan_bg(src, n_trials=10000, frb_name = ' ', print_plot=False):
                     %(frb_name,int(src['t_100'][0]*84600.)))
     return bg
 
+#######################################################################
+#generate bg with spatial prior
+def sp_scan_bg(src, ntrials=100, logging=False, save_trials=True):
+    tr = cy.get_spatial_prior_trial_runner(src_tr=src, 
+                  llh_priors=frb_probs, refine_max=False, get_pixmask=True)
+
+    trials=[]
+    for i in range(ntrials): trials.append(tr.get_one_trial())
+    if logging==True: print('Done running trials')
+
+    sstr = cy.get_sky_scan_trial_runner(nside=256, src_tr=src)
+    tss={'pixel':[],'max_ts':[]}
+    count=0
+    for trial in trials: 
+        scan = sstr.get_one_scan_from_trial(trial, mp_cpus=15, logging=False)
+        ts_with_prior = scan[1] + tr.llh_prior_term[0]
+    
+        new_tss=np.maximum(0, ts_with_prior)
+        if max(new_tss)!=0.: 
+            w=np.where(new_tss==max(new_tss))[0]
+            tss['pixel'].append(w)
+            tss['max_ts'].append(new_tss[w])
+        else: 
+            tss['pixel'].append(None)
+            tss['max_ts'].append(0.)
+        count+=1
+        if count%20==0 and logging==True: print('%i/%i scans done'%(count,ntrials))
+    
+    if save_trials==True: #save trials as csv
+        ts_spprior=pd.DataFrame.from_dict(data=tss)
+        ts_spprior.to_csv('./bg_sp_trials.csv',index=False)
+        
+    bg = cy.dists.Chi2TSD(trials)
+    return bg
