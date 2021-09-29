@@ -20,7 +20,7 @@ conf = {'extended': True, #use extended LLH due to low time window
         'time': "transient",
         'sig': 'transient',
         'ana':ana,
-        'mp_cpus': 1 #some functions fail with >1 (?)
+        'mp_cpus': 5 #some functions fail with >1 (?)
         }
 cy.CONF.update(conf)
 
