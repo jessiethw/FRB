@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 ana_dir = cy.utils.ensure_dir('/home/jthwaites/csky_cache')
-#ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
-#                dir=ana_dir)
+ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
+                dir=ana_dir)
 
 conf = {'extended': True, #use extended LLH due to low time window
         'space': "ps",
@@ -100,14 +100,15 @@ def make_frb_skymap(frbs):
 #make visualizations for a smaller skymap area than full skymap
 ##all fxns below needed for this
 def plot_zoom(scan, ra, dec, levels=[0.68,0.90], title='', reso=3, 
-              var="pVal", range=[0, 6],cmap='Blues', contour_scan=None, CL=None, 
+              var="pVal", ts_range=None,cmap='Blues', contour_scan=None, CL=None, 
               col_label=r"Probability"):
-    if max(scan)<= 0.: 
-        min_cbl=np.around(min(scan),decimals=3)
-        cmap='Blues_r'
-    else: 
-        min_cbl=0.
-        cmap='Blues'
+    if ts_range ==None: 
+        if max(scan)<= 0.: 
+            ts_range=[np.around(min(scan),decimals=3),0.]
+            cmap=cmap+'_r'
+        else: 
+            ts_range=[0.,np.around(max(scan),decimals=3)]
+            cmap=cmap
         
     if cmap is None:
         pdf_palette = sns.color_palette(cmap, 500)
@@ -144,7 +145,7 @@ def plot_zoom(scan, ra, dec, levels=[0.68,0.90], title='', reso=3,
 
     draw_axes(dec, ra, reso)
         
-    plot_color_bar(cmap=cmap, labels=[min_cbl,np.around(max(scan),decimals=3)],col_label=col_label)
+    plot_color_bar(cmap=cmap, labels=ts_range,col_label=col_label)
     #hp.graticule(verbose=False)
 
 def draw_axes(src_dec, src_ra, reso, axis_labels=True):
@@ -206,7 +207,7 @@ def plot_labels(src_dec, src_ra, reso, with_axis_labels=True):
     """Add labels to healpy zoom"""
     fontsize = 20
     
-    if np.degrees(src_dec) > 30.:
+    if np.degrees(src_dec) > 35.:
         ras = [
             np.degrees(src_ra) - reso*3,
             np.degrees(src_ra),
@@ -226,7 +227,7 @@ def plot_labels(src_dec, src_ra, reso, with_axis_labels=True):
     for ra in ras:
         dec_text = np.pi/2. - src_dec + (np.radians(reso) * 5.5/3.)
         dec_offset = np.abs(np.radians(ra - np.degrees(src_ra)))*np.sin(src_dec)*reso*0.01
-        ra_text = r"%.2f$^\circ$"%ra if ra < 360. else r"%.2f$^\circ$"%ra - 360.
+        ra_text = r"%.f$^\circ$"%ra if ra < 360. else r"%.f$^\circ$"%ra - 360.
         hp.projtext(dec_text + dec_offset, np.radians(ra),
                     ra_text, lonlat=False,
                     fontsize=20, ha='center')
