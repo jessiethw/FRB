@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 ana_dir = cy.utils.ensure_dir('/home/jthwaites/csky_cache')
-ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
-                dir=ana_dir)
+#ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
+#                dir=ana_dir)
 
 conf = {'extended': True, #use extended LLH due to low time window
         'space': "ps",
