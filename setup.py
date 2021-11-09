@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 ana_dir = cy.utils.ensure_dir('/home/jthwaites/csky_cache')
-#ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
-#                dir=ana_dir)
+ana = cy.get_analysis(cy.selections.repo, 'version-002-p06', cy.selections.GFUDataSpecs.GFU_IC86, 
+                dir=ana_dir)
 
 conf = {'extended': True, #use extended LLH due to low time window
         'space': "ps",
@@ -109,6 +109,7 @@ def plot_zoom(scan, ra, dec, levels=[0.68,0.90], title='', reso=3,
         else: 
             ts_range=[0.,np.around(max(scan),decimals=3)]
             cmap=cmap
+    elif max(scan)<=0.: cmap=cmap+'_r'
         
     if cmap is None:
         pdf_palette = sns.color_palette(cmap, 500)
@@ -116,6 +117,7 @@ def plot_zoom(scan, ra, dec, levels=[0.68,0.90], title='', reso=3,
     hp.gnomview(scan, rot=(np.degrees(ra), np.degrees(dec), 0),
                     cmap=cmap,
                     max=max(scan),
+                    min=min(scan),
                     reso=reso,
                     title=title,
                     notext=True,
