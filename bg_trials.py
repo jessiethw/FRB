@@ -13,11 +13,11 @@ import csky as cy
 
 #######################################################################
 #generate backgroud trials, w/out spatial prior
-def scan_bg(src, n_trials=10000, frb_name = ' ', print_plot=False):
+def scan_bg(src, seed=0, n_trials=10000, frb_name = ' ', print_plot=False):
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'],src=src)
     
     #running bg trials
-    trials=tr.get_many_fits(n_trials)
+    trials=tr.get_many_fits(n_trials, seed=0)
     bg = cy.dists.Chi2TSD(trials)
     if np.count_nonzero(trials.ts)==0:
         print('Warning: no nonzero TS values')

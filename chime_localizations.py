@@ -76,7 +76,7 @@ def make_healpix_map(tns_name, new_nside=512, max_cl=0.90):
     #get mask to use
     msk = new_CL < max_cl
     
-    print('sum of map probabilities: %.5f'%(frb_probs.sum()))
+    #print('sum of map probabilities: %.5f'%(frb_probs.sum()))
     return frb_probs, msk
 
 
