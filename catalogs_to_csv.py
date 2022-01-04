@@ -142,7 +142,7 @@ def get_catalogs(rem_subbursts=True, return_dataframes=False):
 ###############################################################################
 #combined DataFrame for all catalogs
 #repeater is a bool array: True=rep, False=single burst
-    frbs_all = {'src':[], 'ra_deg':[],'dec_deg':[],'mjd':[],'repeater':[]} 
+    frbs_all = {'src':[], 'ra_deg':[],'dec_deg':[],'mjd':[],'catalog':[],'repeater':[]} 
 
     [frbs_all['src'].append(name_f) for name_f in frbcat['frb_name']]
     [frbs_all['src'].append(name_c) for name_c in chimecat1_names]
@@ -163,6 +163,11 @@ def get_catalogs(rem_subbursts=True, return_dataframes=False):
     [frbs_all['mjd'].append(mjd_c) for mjd_c in chime_cat1['mjd_400']]
     [frbs_all['mjd'].append(mjd_r) for mjd_r in chime_rep['mjd']]
     [frbs_all['mjd'].append(mjd_121102) for mjd_121102 in frb121102_brsts.mjd.values]
+    
+    [frbs_all['catalog'].append('FRBCat') for i in range(len(frbcat['frb_name']))]
+    [frbs_all['catalog'].append('CHIME_1') for i in range(len(chimecat1_names))]
+    [frbs_all['catalog'].append('CHIME_rep') for i in range(len(chime_rep['src']))]
+    [frbs_all['catalog'].append('FRB121102') for i in range(len(frb121102_brsts))]
 
     #creating repeater bool array: True=repeater, False=non-repeater
     unique_frbs, ind, n_frbs = np.unique(frbs_all['src'], return_counts=True, return_index=True)
