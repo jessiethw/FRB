@@ -38,7 +38,7 @@ def get_new_localizations():
         if (extent[0][0]-extent[0][1]) > ra_loc: ra_loc=extent[0][0]-extent[0][1]
         if (extent[1][0]-extent[1][1]) > dec_loc: dec_loc=extent[1][0]-extent[1][1]
     
-        new_localizations['tns_name'].append(f['/'].attrs['tns_name'])
+        new_localizations['tns_name'].append(file[0:12])
         new_localizations['dec'].append(f['/'].attrs['dec'])
         new_localizations['ra_unc'].append(ra_loc)
         new_localizations['dec_unc'].append(dec_loc)
