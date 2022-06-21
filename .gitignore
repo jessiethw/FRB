@@ -1,0 +1,7 @@
+old/
+old/*
+.ipynb_checkpoints/
+.ipynb_checkpoints/*
+*.pkl
+plots/
+plots/*
