@@ -7,8 +7,6 @@ import h5py as h5
 import healpy as hp
 import os
 
-#########################################################################
-#Globals
 chime_loc='/data/user/jthwaites/chime_localization_data/'
 chime_loc_files=os.listdir(chime_loc)
 
