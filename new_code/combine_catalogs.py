@@ -18,6 +18,95 @@ from astropy import units as u
 import os
 
 remove_subbursts=True #flag to remove subbursts from catalogs
+make_plots=False #flag to make plots of catalog
+
+if make_plots:
+    import matplotlib.pyplot as plt
+    import matplotlib as mpl
+    mpl.style.use('/home/jthwaites/FRB/scripts/plots_style.mplstyle')
+
+def frb_parameter_dist(frbs):
+    #Make distributions of the catalog:
+    #date distribution
+
+    year_bins = [Time(f'20{year:02d}-01-01 00:00:00', format='iso').mjd for year in range(8, 22)]
+    fig, ax = plt.subplots(figsize=(10,6))
+    plt.hist(list(frbs['mjd'].values[frbs['catalog']=='FRBCat']), bins=year_bins, 
+            histtype='step', lw=2., label='FRBCat',density=True)
+    plt.hist(list(frbs['mjd'].values[frbs['catalog']=='CHIME_Catalog1']), bins=year_bins, 
+            histtype='step', lw=2., label='CHIME Catalog 1', density=True)
+    plt.hist(list(frbs['mjd'].values[frbs['catalog']=='CHIME_repeaters']), bins=year_bins, 
+            histtype='step', lw=2., label='CHIME Repeaters',density=True)
+    plt.hist(list(frbs['mjd'].values[frbs['catalog']=='FRB121102']), bins=year_bins, 
+            histtype='step', lw=2., label='FRB121102 Bursts',density=True)
+    
+    plt.legend(loc=2)
+    plt.xlabel('MJD')
+    plt.ylabel(r'$N_{FRBs}$/Total FRBs in catalog') 
+    ax.set_title('Distribution of FRBs by Date')
+    plt.savefig('/home/jthwaites/FRB/plots/date_dist.png')
+
+    #dec distribution
+    fig, ax = plt.subplots(figsize=(10,6))
+    dec_bins = np.linspace(-90,90,num=19) #num=19 for every 10 deg
+
+    plt.hist(list(frbs['dec_deg'].values[frbs['catalog']=='FRBCat']), bins=dec_bins, 
+            histtype='step', lw=2., label='FRBCat')
+    plt.hist(list(frbs['dec_deg'].values[frbs['catalog']=='CHIME_Catalog1']), bins=dec_bins,
+            histtype='step', lw=2., label='CHIME Catalog 1')
+    plt.hist(list(frbs['dec_deg'].values[frbs['catalog']=='CHIME_repeaters']), bins=dec_bins,
+            histtype='step', lw=2., label='CHIME Repeaters')
+
+    plt.legend(loc=0)
+    ax.set_title(r'Declination of FRBs in catalog', fontsize=18)
+    plt.xlim([-91,91])
+    plt.xlabel(r'$\delta$ [deg]')
+    plt.ylabel(r'$N$')
+    plt.savefig('/home/jthwaites/FRB/plots/dec_dist.png')
+
+def repeater_plots(frbs):
+    #make distributions for CHIME repeater catalog
+    #flux and time between repeats
+    
+    frbs_flux=np.concatenate(frbs['flux'].values)
+    frbs_flux=frbs_flux[frbs_flux != None]
+
+    log_bins_range=[np.log(min(frbs_flux))/np.log(10),np.log(max(frbs_flux))/np.log(10)]
+
+    flux_bins=np.logspace(log_bins_range[0]-0.5,log_bins_range[1]+0.5, num=20)
+    fig, ax = plt.subplots(figsize=(10,6))
+    plt.hist(list(frbs_flux), bins=flux_bins, histtype='step', lw=2., label='CHIME Repeaters')
+
+    plt.ylabel(r'$N$')
+    plt.semilogx()
+    plt.ylim((0,24))
+    plt.xlabel(r'Flux [Jy]')
+    plt.legend(loc=0)
+    ax.set_title(r'FRB fluxes', fontsize=18)
+    plt.savefig('/home/jthwaites/FRB/plots/repeater_flux_dist.png')
+
+    #time between each repeat
+    deltat=[]
+    for all_repeats in frbs['mjd']:
+        all_repeats=np.sort(all_repeats)
+        for i in range(1,len(all_repeats)):
+            deltat.append(all_repeats[i]-all_repeats[i-1])
+    deltat=np.asarray(deltat)
+    deltat=deltat[deltat.nonzero()]
+    
+    log_bins_range=[(np.log(min(deltat))/np.log(10))-0.5,(np.log(max(deltat))/np.log(10))+0.5]
+    dt_bins=np.logspace(log_bins_range[0],log_bins_range[1], num=20)
+    fig, ax = plt.subplots(figsize=(10,6))
+
+    plt.hist(deltat, bins=dt_bins, histtype='step', lw=2., label='CHIME repeaters')
+
+    plt.ylabel(r'$N$')
+    plt.semilogx()
+
+    plt.xlabel(r'Time (mjd)')
+    plt.legend(loc=2)
+    ax.set_title(r'Time between repeater events', fontsize=18)
+    plt.savefig('/home/jthwaites/FRB/plots/time_between_repeats.png')
 
 ##############################################
 #Chime repeaters catalog
@@ -70,6 +159,8 @@ for source in repeaters:
     chime_repeaters['flux'].append(fluxes)
 
 chime_repeaters=pd.DataFrame(data=chime_repeaters)
+if make_plots==True:
+    repeater_plots(chime_repeaters)
 #if no bursts are left after dropping those in Chime cat 1, remove from list
 n=np.where(np.asarray([len(mjd_list) for mjd_list in chime_repeaters['mjd'].values])==0)[0]
 chime_repeaters=chime_repeaters.drop(n)
@@ -120,14 +211,23 @@ else: chime_cat1=chime_cat1.drop(remove_121102)
 
 frbs_all = {
     'src':np.concatenate((np.asarray(frbcat['frb_name'].values),np.asarray(chimecat1_names),
-                        chime_repeaters['frb_name'].values,np.asarray(['FRB121102']*len(frb121102)))),
+                np.concatenate([[chime_repeaters['frb_name'].values[i]]*len(chime_repeaters['mjd'].values[i])
+                    for i in range(len(chime_repeaters['frb_name'].values))]),
+                np.asarray(['FRB121102']*len(frb121102)))),
     'ra_deg':np.concatenate((frbcat_locations.ra.deg,chime_cat1['ra'],
-                        chime_repeaters['ra_deg'],[location_121102.ra.deg]*len(frb121102))),
+                np.concatenate([[chime_repeaters['ra_deg'].values[i]]*len(chime_repeaters['mjd'].values[i]) 
+                    for i in range(len(chime_repeaters['frb_name'].values))]),
+                [location_121102.ra.deg]*len(frb121102))),
     'dec_deg':np.concatenate((frbcat_locations.dec.deg,chime_cat1['dec'],
-                        chime_repeaters['dec_deg'],[location_121102.dec.deg]*len(frb121102))),
-    'mjd':np.concatenate((frbcat_mjd,chime_cat1['mjd_400'], chime_repeaters['mjd'],frb121102.mjd.values)),
+                np.concatenate([[chime_repeaters['dec_deg'].values[i]]*len(chime_repeaters['mjd'].values[i]) 
+                    for i in range(len(chime_repeaters['frb_name'].values))]),
+                [location_121102.dec.deg]*len(frb121102))),
+    'mjd':np.concatenate((frbcat_mjd, chime_cat1['mjd_400'], 
+                        np.concatenate(chime_repeaters['mjd'].values),
+                        frb121102.mjd.values)),
     'catalog':np.concatenate((['FRBCat']*len(frbcat['frb_name']),['CHIME_Catalog1']*len(chimecat1_names),
-                        ['CHIME_repeaters']*len(chime_repeaters['frb_name']), ['FRB121102']*len(frb121102))),
+                        ['CHIME_repeaters']*len(np.concatenate(chime_repeaters['mjd'].values)), 
+                        ['FRB121102']*len(frb121102))),
     'repeater':[]} 
 
 #creating repeater bool array: True=repeater, False=non-repeater
@@ -168,3 +268,6 @@ frb121102_bursts=pd.DataFrame.from_dict(data={
     'mjd':frb121102.mjd.values})
 
 frb121102_bursts.to_csv('/home/jthwaites/FRB/catalog/frb121102_bursts.csv',index=False)
+
+if make_plots:
+    frb_parameter_dist(all_frbs)
