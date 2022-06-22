@@ -1,5 +1,6 @@
 h5py==3.5.0
 healpy==1.13.0
+histlite==0.9.5
 matplotlib==2.2.5
 meander-0.0.3
 numpy>=1.21.5

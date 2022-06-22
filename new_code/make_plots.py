@@ -14,6 +14,8 @@ import meander
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+mpl.style.use('/home/jthwaites/FRB/scripts/plots_style.mplstyle')
+
 #######################################################################
 #make skymap visualization of loaded frbs
 def make_frb_skymap(frbs):
@@ -40,7 +42,7 @@ def make_frb_skymap(frbs):
     cb.set_label(r'FRBs/bin')
     
     plt.savefig('/home/jthwaites/plots/frb_skymap.png')
-        
+
 ########################################################################
 #make visualizations for a smaller skymap area than full skymap
 ##all fxns below needed for this
