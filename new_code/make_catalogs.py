@@ -15,7 +15,7 @@ import pandas as pd
 from astropy.time import Time
 from astropy.coordinates import SkyCoord
 from astropy import units as u
-
+import os
 
 remove_subbursts=True #flag to remove subbursts from catalogs
 
@@ -118,41 +118,53 @@ else: chime_cat1=chime_cat1.drop(remove_121102)
 # saving all of these in DataFrame objects
 # repeater is a bool array: True=rep, False=single burst
 
-frbs_all = {'src':[], 'ra_deg':[],'dec_deg':[],'mjd':[],'catalog':[],'repeater':[]} 
-
-[frbs_all['src'].append(name_f) for name_f in frbcat['frb_name']]
-[frbs_all['src'].append(name_c) for name_c in chimecat1_names]
-[frbs_all['src'].append(name_r) for name_r in chime_repeaters['src']]
-[frbs_all['src'].append('FRB121102') for i in range(len(frb121102))]
-
-[frbs_all['ra_deg'].append(ra_f) for ra_f in frbcat_locations.ra.deg]
-[frbs_all['ra_deg'].append(ra_c) for ra_c in chime_cat1['ra']]
-[frbs_all['ra_deg'].append(ra_r) for ra_r in chime_repeaters['ra_deg']]
-[frbs_all['ra_deg'].append(location_121102.ra.deg) for i in range(len(frb121102))]
-
-[frbs_all['dec_deg'].append(dec_f) for dec_f in frbcat_locations.dec.deg]
-[frbs_all['dec_deg'].append(dec_c) for dec_c in chime_cat1['dec']]
-[frbs_all['dec_deg'].append(dec_r) for dec_r in chime_repeaters['dec_deg']]
-[frbs_all['dec_deg'].append(location_121102.dec.deg) for i in range(len(frb121102))]
-
-[frbs_all['mjd'].append(mjd_f) for mjd_f in frbcat_mjd]
-[frbs_all['mjd'].append(mjd_c) for mjd_c in chime_cat1['mjd_400']]
-[frbs_all['mjd'].append(mjd_r) for mjd_r in chime_repeaters['mjd']]
-[frbs_all['mjd'].append(mjd_121102) for mjd_121102 in frb121102.mjd.values]
-    
-[frbs_all['catalog'].append('FRBCat') for i in range(len(frbcat['frb_name']))]
-[frbs_all['catalog'].append('CHIME_1') for i in range(len(chimecat1_names))]
-[frbs_all['catalog'].append('CHIME_rep') for i in range(len(chime_repeaters['src']))]
-[frbs_all['catalog'].append('FRB121102') for i in range(len(frb121102))]
+frbs_all = {
+    'src':np.concatenate((np.asarray(frbcat['frb_name'].values),np.asarray(chimecat1_names),
+                        chime_repeaters['frb_name'].values,np.asarray(['FRB121102']*len(frb121102)))),
+    'ra_deg':np.concatenate((frbcat_locations.ra.deg,chime_cat1['ra'],
+                        chime_repeaters['ra_deg'],[location_121102.ra.deg]*len(frb121102))),
+    'dec_deg':np.concatenate((frbcat_locations.dec.deg,chime_cat1['dec'],
+                        chime_repeaters['dec_deg'],[location_121102.dec.deg]*len(frb121102))),
+    'mjd':np.concatenate((frbcat_mjd,chime_cat1['mjd_400'], chime_repeaters['mjd'],frb121102.mjd.values)),
+    'catalog':np.concatenate((['FRBCat']*len(frbcat['frb_name']),['CHIME_Catalog1']*len(chimecat1_names),
+                        ['CHIME_repeaters']*len(chime_repeaters['frb_name']), ['FRB121102']*len(frb121102))),
+    'repeater':[]} 
 
 #creating repeater bool array: True=repeater, False=non-repeater
 unique_frbs, ind, n_frbs = np.unique(frbs_all['src'], return_counts=True, return_index=True)
-msk=n_frbs!=1
-rep=np.sort([frbs_all['src'][m] for m in ind[np.where(msk)[0]]])
-    
+repeaters=frbs_all['src'][ind[n_frbs!=1]]
 for name in frbs_all['src']: 
-    if name in rep: frbs_all['repeater'].append(True)
+    if name in repeaters: frbs_all['repeater'].append(True)
     else: frbs_all['repeater'].append(False)
 
-frbs_all_data=pd.DataFrame.from_dict(data=frbs_all)
-frbs_all_data.to_csv('/home/jthwaites/FRB/catalog/frbs_all.csv',index=False) 
+all_frbs=pd.DataFrame.from_dict(data=frbs_all)
+all_frbs.to_csv('/home/jthwaites/FRB/catalog/frbs_all.csv',index=False) 
+
+##############################################
+# catalog of all those with spatial priors
+localization_files=os.listdir('/data/user/jthwaites/chime_localization_data/')
+spatial_priors=[]
+[spatial_priors.append(filename[0:12]) for filename in localization_files]
+
+spatial_priors_frbs={'src':[], 'ra_deg':[],'dec_deg':[],'mjd':[], 'repeater':[]} 
+for k in range(len(spatial_priors)):
+    index=np.where(spatial_priors[k] == all_frbs['src'].values)[0]
+    for i in index:
+        spatial_priors_frbs['src'].append(spatial_priors[k])
+        spatial_priors_frbs['ra_deg'].append(all_frbs['ra_deg'].values[i])
+        spatial_priors_frbs['dec_deg'].append(all_frbs['dec_deg'].values[i])
+        spatial_priors_frbs['mjd'].append(all_frbs['mjd'].values[i])
+        spatial_priors_frbs['repeater'].append(all_frbs['repeater'].values[i])
+
+spatial_priors_frbs=pd.DataFrame.from_dict(data=spatial_priors_frbs)
+spatial_priors_frbs.to_csv('/home/jthwaites/FRB/catalog/spatial_priors_frbs.csv',index=False)
+
+##############################################
+# catalog of frb121102 bursts
+frb121102_bursts=pd.DataFrame.from_dict(data={
+    'src':['FRB121102']*len(frb121102), 
+    'ra_deg':[location_121102.ra.deg]*len(frb121102),
+    'dec_deg':[location_121102.dec.deg]*len(frb121102),
+    'mjd':frb121102.mjd.values})
+
+frb121102_bursts.to_csv('/home/jthwaites/FRB/catalog/frb121102_bursts.csv',index=False)
