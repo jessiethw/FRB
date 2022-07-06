@@ -108,7 +108,7 @@ with open('/home/jthwaites/FRB/background_trials/%s_bg_%i.pkl'%(args.source,args
 if args.make_ts_hist:
     """Histogram of BG TS values"""
     import histlite as hl
-    print('making hist')
+    
     fig, ax = plt.subplots(figsize=(9,6))
     tss=[trials[i]['max_TS'] for i in range(len(trials))]
         

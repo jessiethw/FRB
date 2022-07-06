@@ -17,6 +17,38 @@ import matplotlib as mpl
 mpl.style.use('/home/jthwaites/FRB/scripts/plots_style.mplstyle')
 
 #######################################################################
+#make ts dist by loading pickle file
+def make_ts_dist_from_pickle(path):
+    import os
+    filename=os.path.basename(path)
+    source=filename[:12]
+    tw=int(filename.split('_')[-1][:-4])
+    
+    trials=np.load(path, allow_pickle=True)
+
+    fig, ax = plt.subplots(figsize=(9,6))
+    tss=[trials[i]['max_TS'] for i in range(len(trials))]
+        
+    bg = cy.dists.Chi2TSD(tss)
+    h = bg.get_hist(bins=50)
+    hl.plot1d(ax, h, crosses=True, label='%i bg trials'%(bg.n_total))
+
+    # chi2 fit
+    x = h.centers[0][1:]
+    norm = h.integrate().values #normalization for chi-sq
+    ax.semilogy(x, norm * bg.pdf(x), lw=1, 
+            label=r'$\chi^2$[%.2f dof, $\eta$=%.3f]'%(bg.ndof, bg.eta))
+
+    ax.set_xlabel(r'TS')
+    ax.set_ylabel(r'$N$')
+    plt.title(r'BG TS distribution, %s, with prior (%is)'%(source,tw))
+    ax.legend()
+
+    plt.savefig('/home/jthwaites/FRB/plots/bg_ts_distributions/%s_bgts_%is_w_prior.png' \
+                %(source,tw))
+
+make_ts_dist_from_pickle('background_trials/FRB20190416A_bg_86400.pkl')
+#######################################################################
 #make skymap visualization of loaded frbs
 def make_frb_skymap(frbs):
     unique_frbs, frb_ind_all, n_frbs = np.unique(frbs['src'].values, 
