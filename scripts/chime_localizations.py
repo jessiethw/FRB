@@ -45,14 +45,20 @@ def get_new_localizations():
 ############################################################################
 #make a healpix map for one frb
 def make_healpix_map(tns_name, new_nside=512, max_cl=0.90):
-    new_localizations=get_new_localizations()
-    
-    index=np.where(tns_name==np.asarray(new_localizations['tns_name']))[0][0]
-    frb = chime_loc + tns_name+'_localization.h5'
-    f = h5.File(frb, 'r')
+    #new_localizations=get_new_localizations()
+    #index=np.where(tns_name==np.asarray(new_localizations['tns_name']))[0][0]
 
-    ra = np.radians(f['/'].attrs['ra'])
-    dec = np.radians(f['/'].attrs['dec'])
+    frb = chime_loc + tns_name+'_localization.h5'
+    try:
+        f = h5.File(frb, 'r')
+    except Exception as e:
+        print(e)
+        print("Error finding h5 localization file for this FRB")
+        print("Check FRB name for errors and/or "+chime_loc)
+        return
+
+    #ra = np.radians(f['/'].attrs['ra'])
+    #dec = np.radians(f['/'].attrs['dec'])
 
     original_nside = f['healpix'].attrs['nside']
     ipix, CL = f['healpix/ipix'][()], f['healpix/CL'][()]

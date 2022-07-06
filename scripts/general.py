@@ -8,9 +8,14 @@ import numpy as np
 import csky as cy
 import pandas as pd
 
-#define sources for analysis (options: single or list, spatial priors
-def sources(t_s, mjd, ra, dec, prior=None, deg=True): #t_s is time window (sec)
-    if prior !=None:
+#define sources for analysis (options: single or list, spatial priors)
+def sources(t_s, mjd, ra, dec, prior=[], deg=True): #t_s is time window (sec)
+    """Make source(s) in csky. 2 cases:
+    prior=[] - no prior, point source
+    prior=array - priors given
+    """
+
+    if len(prior) != 0:
         if isinstance(mjd,list):
             src = cy.utils.Sources(
                 ra=ra,dec=dec, mjd=[m-(t_s/(84600.*2)) for m in mjd],
@@ -20,7 +25,7 @@ def sources(t_s, mjd, ra, dec, prior=None, deg=True): #t_s is time window (sec)
             src = cy.utils.Sources(
                 ra=ra,dec=dec, mjd=mjd,
                 t_100=[t_s/84600.],sigma_t=[0.],
-                prior=prior, deg=deg)
+                prior=[prior], deg=deg)
     else: 
         if isinstance(mjd,list):
             src = cy.utils.Sources(
