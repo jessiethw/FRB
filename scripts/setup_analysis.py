@@ -18,7 +18,8 @@ def load_new():
                 'time': "transient",
                 'sig': 'transient',
                 'ana':ana,
-                'mp_cpus': 5 #some functions fail with >1 (?)
+                'mp_cpus': 5, #some functions fail with >1 (?)
+                'extra_keep':['energy']
                 }
 
         cy.CONF.update(conf)
@@ -49,7 +50,8 @@ def reload_ana():
                 'time': "transient",
                 'sig': 'transient',
                 'ana':ana,
-                'mp_cpus': 5 #some functions fail with >1 (?)
+                'mp_cpus': 5, #some functions fail with >1 (?)
+                'extra_keep':['energy']
                 }
 
         cy.CONF.update(conf)
