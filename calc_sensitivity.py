@@ -1,8 +1,7 @@
-""" Script to calculate sensitivies
-    for FRBs without spatial priors
-    and plot passing fractions 
-    Jessie Thwaites, 8/23/21
-    NOT COMPLETE
+#!/usr/bin/env python
+
+""" Point source like FRB script with csky
+    Jessie Thwaites, Sept 2022
 """
 
 import numpy as np
@@ -10,15 +9,66 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import histlite as hl
 import csky as cy
+from scipy import stats
+import pickle as pkl
+import argparse
+######################### configure arguments #############################
+parser = argparse.ArgumentParser(description='Run background for FRB with spatial prior')
+parser.add_argument("--source", default="FRB20190416A", type=str, 
+                    help="FRB source name (tns_name from CHIME) (default=FRB20190416A)")
+parser.add_argument("--ntrials", default=1000, type=int,
+                    help="Number of trials (default=1000)")
+parser.add_argument('--deltaT', type=float, default=86400.,
+                    help="Time window in seconds (default=86400s=1d)")
+parser.add_argument('--seed', type=int, default=0, help="Random number seed")
+#parser.add_argument('--step', type=float, default=0.5,
+#                    help='step size for generating signal trials (default=0.5)')
+args = parser.parse_args()
 
-import bg_trials
+
+#######################################################################
+#generate backgroud trials, w/out spatial prior
+def scan_bg(src, seed=args.seed, n_trials=10000, frb_name = 'test_frb', print_plot=False):
+    tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'],src=src)
+    
+    deltaT=round(src['t_100'][0]*84600.)
+    #running bg trials
+    trials=tr.get_many_fits(n_trials, seed=0)
+    bg = cy.dists.Chi2TSD(trials)
+    if np.count_nonzero(trials.ts)==0:
+        print('Warning: no nonzero TS values')
+        print_plot=False
+    
+    if print_plot==True: 
+        fig, ax = plt.subplots(figsize=(9,6))
+        h = bg.get_hist(bins=50)
+        hl.plot1d(ax, h, crosses=True, label='%i bg trials'%(bg.n_total))
+
+        # compare with the chi2 fit:
+        x = h.centers[0][1:] #remove zero TS bin from curve: not fitted here
+        norm = h.integrate().values #normalization for chi-sq
+        ax.semilogy(x, norm * bg.pdf(x), lw=1, 
+                    label=r'$\chi^2$[%.2f dof, $\eta$=%.3f]'%(bg.ndof, bg.eta))
+
+        ax.set_xlabel(r'TS')
+        ax.set_ylabel(r'$N$')
+        if src['t_100'][0]==1.: plt.title(r'BG TS distribution, %s (1d)'%(frb_name))
+        else: plt.title(r'BG TS distribution, %s (%is)'%(frb_name,src['t_100'][0]*84600.))
+        ax.legend()
+        plt.savefig('/home/jthwaites/public_html/Background_TS/%s_bgts_%is.png'
+                    %(frb_name,int(src['t_100'][0]*84600.)))
+        
+    with open('/home/jthwaites/FRB/background_trials/point_source/'+
+             f'{frb_name}_bg_{deltaT}_{seed}.pkl', 'wb') as outfile:
+        pkl.dump(trials, outfile)
+    return bg
 
 ##################################################################################
 #calculate sensitivity and discovery potential w/out spatial prior
 # beta is %, nsigma is # of sigma for dp - defaults are 0.9 (avoid flip-flop) and 5sigma DP
 def get_sensitivity(src, beta=0.9, nsigma=5, gamma=2., n_trials=10000, logging=False): 
     
-    bg=bg_trials.scan_bg(src, n_trials=n_trials)
+    bg=scan_bg(src, seed=args.seed, n_trials=n_trials, frb_name = args.source, print_plot=True)
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'], src=src, 
                            inj_conf={'flux':cy.hyp.PowerLawFlux(gamma)})
 

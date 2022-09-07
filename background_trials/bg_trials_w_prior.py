@@ -102,7 +102,7 @@ for seed in range(n_trials):
     del scan #also very large, free memory when unneeded
 print('Done with TS background scans.')    
 
-with open('/home/jthwaites/FRB/background_trials/%s_bg_%i.pkl'%(args.source,args.deltaT), 'wb') as outfile:
+with open('/home/jthwaites/FRB/background_trials/spatial_prior/%s_bg_%i.pkl'%(args.source,args.deltaT), 'wb') as outfile:
     pkl.dump(trials, outfile)
     
 if args.make_ts_hist:
