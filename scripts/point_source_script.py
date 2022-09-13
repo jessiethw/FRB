@@ -6,12 +6,24 @@
 
 import numpy as np
 import matplotlib as mpl
+mpl.use('agg')
 import matplotlib.pyplot as plt
 import histlite as hl
 import csky as cy
 from scipy import stats
 import pickle as pkl
 import argparse
+import sys
+
+import general
+frb_scripts_path='/home/jthwaites/FRB/scripts'
+if frb_scripts_path not in sys.path:
+    sys.path.append(frb_scripts_path)
+
+#setup analysis object, load analysis
+import setup_analysis 
+setup_analysis.reload_ana()
+
 ######################### configure arguments #############################
 parser = argparse.ArgumentParser(description='Run background for FRB with spatial prior')
 parser.add_argument("--source", default="FRB20190416A", type=str, 
@@ -20,15 +32,12 @@ parser.add_argument("--ntrials", default=1000, type=int,
                     help="Number of trials (default=1000)")
 parser.add_argument('--deltaT', type=float, default=86400.,
                     help="Time window in seconds (default=86400s=1d)")
-parser.add_argument('--seed', type=int, default=0, help="Random number seed")
-#parser.add_argument('--step', type=float, default=0.5,
-#                    help='step size for generating signal trials (default=0.5)')
+#parser.add_argument('--seed', type=int, default=0, help="Random number seed")
 args = parser.parse_args()
-
 
 #######################################################################
 #generate backgroud trials, w/out spatial prior
-def scan_bg(src, seed=args.seed, n_trials=10000, frb_name = 'test_frb', print_plot=False):
+def scan_bg(src, n_trials=10000, frb_name = 'test_frb', print_plot=False):
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'],src=src)
     
     deltaT=round(src['t_100'][0]*84600.)
@@ -59,7 +68,7 @@ def scan_bg(src, seed=args.seed, n_trials=10000, frb_name = 'test_frb', print_pl
                     %(frb_name,int(src['t_100'][0]*84600.)))
         
     with open('/home/jthwaites/FRB/background_trials/point_source/'+
-             f'{frb_name}_bg_{deltaT}_{seed}.pkl', 'wb') as outfile:
+             f'{frb_name}_bg_{deltaT}.pkl', 'wb') as outfile:
         pkl.dump(trials, outfile)
     return bg
 
@@ -68,7 +77,7 @@ def scan_bg(src, seed=args.seed, n_trials=10000, frb_name = 'test_frb', print_pl
 # beta is %, nsigma is # of sigma for dp - defaults are 0.9 (avoid flip-flop) and 5sigma DP
 def get_sensitivity(src, beta=0.9, nsigma=5, gamma=2., n_trials=10000, logging=False): 
     
-    bg=scan_bg(src, seed=args.seed, n_trials=n_trials, frb_name = args.source, print_plot=True)
+    bg=scan_bg(src, n_trials=n_trials, frb_name = args.source, print_plot=True)
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'], src=src, 
                            inj_conf={'flux':cy.hyp.PowerLawFlux(gamma)})
 
@@ -110,10 +119,29 @@ def plot_passing_fraction(src, sens, disc, nsigma=5, gamma=2., frb_name=' ',
         plt.title(r'passing fraction, %s (%is) $\gamma$=%.1f'%(frb_name,src['t_100'][0]*84600., gamma))
     
     if print_plot==False: plt.show()
-    else: plt.savefig('/home/jthwaites/public_html/passing_frac/%s_pf_%is_%.1f.png'
+    else: plt.savefig('/home/jthwaites/FRB/plots/passing_frac/%s_pf_%is_%.1f.png'
                       %(frb_name,int(src['t_100'][0]*84600.),gamma))
     
     print('gamma=%.1f'%gamma)
     print(r'Sensitivity: %.3f +/- %.3f | DP: %.3f +/- %.3f'
           %(sens['n_sig'], sens['n_sig']*sens['n_sig_error'],
             disc['n_sig'], disc['n_sig']*disc['n_sig_error']))
+
+#######################
+#running functions for sens, dp and plotting
+frbs=general.load_frbs(all=True)
+
+index=np.where(frbs['src']==args.source)[0]
+if len(index)==0:
+    print("No match for source found")
+    print("Check source name")
+    sys.exit()
+
+src=general.sources(args.deltaT, frbs['mjd'].values[index[0]], 
+                    frbs['ra_deg'].values[index[0]], frbs['dec_deg'].values[index[0]])
+sens, dp=get_sensitivity(src)
+plot_passing_fraction(src, sens, dp)
+
+with open('/home/jthwaites/FRB/sens_trials/point_source/'+
+             f'{args.source}_bg_{args.deltaT}.pkl', 'wb') as outfile:
+    pkl.dump(sens, dp, outfile)

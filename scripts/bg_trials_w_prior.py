@@ -8,6 +8,7 @@
 
 import numpy as np
 import matplotlib as mpl
+mpl.use('agg')
 import matplotlib.pyplot as plt
 import csky as cy
 import pandas as pd
