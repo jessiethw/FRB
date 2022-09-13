@@ -1,3 +1,9 @@
+""" Writes submit file for bg trials and sensitivities
+    for point-source like FRBs
+
+    Jessie Thwaites, Sept 2022
+"""
+
 import pycondor
 import numpy as np
 import pandas as pd
@@ -58,7 +64,11 @@ frbs = frbs.reset_index()
 
 for frb_name in frbs['src']:
     for time_window in np.logspace(-2,6,num=9):
-        job.add_arg( f'--source={frb_name} --deltaT={time_window}')
+        if time_window<100.:
+            ntrials=100000
+        else:
+            ntrials=10000
+        job.add_arg( f'--source={frb_name} --deltaT={time_window} --ntrials={ntrials}')
 
 dagman = pycondor.Dagman(
     'FRB_sensitivity_trials_point_source',
