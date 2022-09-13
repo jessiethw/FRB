@@ -37,6 +37,9 @@ output = f'/scratch/{username}/frb/priors/output'
 log = f'/scratch/{username}/frb/priors/log'
 submit = f'/scratch/{username}/frb/priors/submit'
 
+dagman = pycondor.Dagman(
+    'FRB_bg_sens_trials_prior',
+    submit=submit, verbose=2)
 
 bg_job = pycondor.Job(
     'bg_trials_frb_prior',
@@ -48,10 +51,11 @@ bg_job = pycondor.Job(
     getenv=True,
     universe='vanilla',
     verbose=2,
-    request_memory=6000,
+    request_memory=10000,
     extra_lines=[
         'should_transfer_files = YES',
-        'when_to_transfer_output = ON_EXIT']
+        'when_to_transfer_output = ON_EXIT'],
+    dag=dagman
     )
 sens_job = pycondor.Job(
     'sensitivity_trials_frb_prior',
@@ -63,10 +67,11 @@ sens_job = pycondor.Job(
     getenv=True,
     universe='vanilla',
     verbose=2,
-    request_memory=6000,
+    request_memory=10000,
     extra_lines=[
         'should_transfer_files = YES',
-        'when_to_transfer_output = ON_EXIT']
+        'when_to_transfer_output = ON_EXIT'],
+    dag=dagman
     )
 
 frbs = pd.read_csv('/home/jthwaites/FRB/catalog/spatial_priors_frbs.csv')
@@ -80,10 +85,6 @@ for frb_name in frbs['src']:
         bg_job.add_arg( f'--source={frb_name} --deltaT={time_window} --ntrials={ntrials}')
         sens_job.add_arg( f'--source={frb_name} --deltaT={time_window}')
 
-dagman = pycondor.Dagman(
-    'FRB_bg_sens_trials_prior',
-    submit=submit, verbose=2)
-dagman.add_parent(bg_job)
-dagman.add_child(sens_job)
+sens_job.add_parent(bg_job)
 
 dagman.build_submit()
