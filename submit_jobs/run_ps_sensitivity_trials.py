@@ -71,7 +71,7 @@ for frb_name in frbs['src']:
         job.add_arg( f'--source={frb_name} --deltaT={time_window} --ntrials={ntrials}')
 
 dagman = pycondor.Dagman(
-    'FRB_sensitivity_trials_point_source',
+    'FRB_sens_trials_point_source',
     submit=submit, verbose=2)
 dagman.add_job(job)
 dagman.build_submit()

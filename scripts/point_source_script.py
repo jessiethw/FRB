@@ -15,12 +15,12 @@ import pickle as pkl
 import argparse
 import sys
 
-import general
 frb_scripts_path='/home/jthwaites/FRB/scripts'
 if frb_scripts_path not in sys.path:
     sys.path.append(frb_scripts_path)
 
 #setup analysis object, load analysis
+import general
 import setup_analysis 
 setup_analysis.reload_ana()
 
@@ -32,7 +32,6 @@ parser.add_argument("--ntrials", default=1000, type=int,
                     help="Number of trials (default=1000)")
 parser.add_argument('--deltaT', type=float, default=86400.,
                     help="Time window in seconds (default=86400s=1d)")
-#parser.add_argument('--seed', type=int, default=0, help="Random number seed")
 args = parser.parse_args()
 
 #######################################################################
@@ -64,7 +63,7 @@ def scan_bg(src, n_trials=10000, frb_name = 'test_frb', print_plot=False):
         if src['t_100'][0]==1.: plt.title(r'BG TS distribution, %s (1d)'%(frb_name))
         else: plt.title(r'BG TS distribution, %s (%is)'%(frb_name,src['t_100'][0]*84600.))
         ax.legend()
-        plt.savefig('/home/jthwaites/public_html/Background_TS/%s_bgts_%is.png'
+        plt.savefig('/home/jthwaites/FRB/bg_ts_distributions/%s_bgts_%is.png'
                     %(frb_name,int(src['t_100'][0]*84600.)))
         
     with open('/home/jthwaites/FRB/background_trials/point_source/'+
