@@ -7,10 +7,11 @@
     Jessie Thwaites, 1/4/22
 """  
 
+from statistics import median
 import numpy as np
 import matplotlib as mpl
 mpl.use('agg')
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import csky as cy
 import h5py as h5
 import healpy as hp
@@ -32,12 +33,28 @@ setup_analysis.reload_ana()
 import chime_localizations as loc
 import general
 
-@np.vectorize
+######################### configure arguments #############################
+parser = argparse.ArgumentParser(description='Run background for FRB with spatial prior')
+parser.add_argument("--source", default="FRB20190416A", type=str, 
+                    help="FRB source name (tns_name from CHIME) (default=FRB20190416A)")
+parser.add_argument("--ntrials", default=1000, type=int,
+                    help="Number of trials (default=1000)")
+parser.add_argument('--deltaT', type=float, default=86400.,
+                    help="Time window in seconds (default=86400s=1d)")
+parser.add_argument('--nside', type=int, default=256, 
+                    help="nside to use when making healpix maps")
+parser.add_argument('--ns_max', type=float, default=5.0,
+                    help='max n_signal events for running trials (default=5.0)')
+parser.add_argument('--step', type=float, default=0.5,
+                    help='step size for generating signal trials (default=0.5)')
+args = parser.parse_args()
+###########################################################################
+'''
 def find_n_sig(dec_deg, sig, bg, beta=0.9, nsigma=None):
     # get signal trials, background distribution, and trial runner
     sig_trials = cy.bk.get_best(sig, 'dec', dec_deg, 'nsig')
     b = cy.bk.get_best(bg, dec_deg)
-    tr = cy.bk.get_best(trs, dec_deg)
+    
     # determine ts threshold
     if nsigma is not None:
         ts = b.isf_nsigma(nsigma)
@@ -49,28 +66,9 @@ def find_n_sig(dec_deg, sig, bg, beta=0.9, nsigma=None):
     # get number of signal events
     # (arguments prevent additional trials from being run)
     result = sptr.find_n_sig(ts, beta, max_batch_size=0, logging=False, trials=trials, n_bootstrap=1)
-    # return flux
-    return tr.to_E2dNdE(result, E0=100, unit=1e3)
-
-######################### configure arguments #############################
-parser = argparse.ArgumentParser(description='Run background for FRB with spatial prior')
-parser.add_argument("--source", default="FRB20190416A", type=str, 
-                    help="FRB source name (tns_name from CHIME) (default=FRB20190416A)")
-parser.add_argument("--ntrials", default=1000, type=int,
-                    help="Number of trials (default=1000)")
-parser.add_argument('--deltaT', type=float, default=86400.,
-                    help="Time window in seconds (default=86400s=1d)")
-#commented out for now - seed set later w/in code
-#parser.add_argument('--seed', type=int, default=123, help="Random number seed")
-parser.add_argument('--nside', type=int, default=256, 
-                    help="nside to use when making healpix maps")
-parser.add_argument('--ns_max', type=float, default=5.0,
-                    help='max n_signal events for running trials (default=5.0)')
-parser.add_argument('--step', type=float, default=0.5,
-                    help='step size for generating signal trials (default=0.5)')
-args = parser.parse_args()
-###########################################################################
-
+    
+    return result
+'''
 ##Load catalog of FRBs with spatial priors
 frbs=general.load_frbs(spatial_priors=True)
 ana=cy.CONF['ana']
@@ -98,52 +96,29 @@ sstr = cy.get_sky_scan_trial_runner(ana=ana, nside=args.nside,
 
 ##run signal trials
 print('Running %i signal trials'%(args.ntrials))
-for nsig in np.arange(0., args.ns_max+args.step, args.step):
-    print('ns = %s'%(str(nsig)))
+for nsig in np.arange(args.step, args.ns_max+args.step, args.step):
     for i in range(args.ntrials):
-        trial=sptr.get_one_trial(nsig, poisson=True)
+        trial=sptr.get_one_trial(nsig, seed=i, poisson=True)
         scan = sstr.get_one_scan_from_trial(trial, mp_cpus=15, logging=False)
-        trial_obj=cy.utils.Arrays(init={'mlog10p':scan[0], 'ts':scan[1],
+
+        ts_with_prior=[scan[1][i]+sptr.llh_prior_term[0][i] for i in range(len(sptr.llh_prior_term[0]))]
+
+        trial_obj=cy.utils.Arrays(init={'mlog10p':scan[0], 'ts':ts_with_prior,
                                         'ns':scan[2], 'gamma':scan[3]})
         if i==0:
             trials[nsig]=[trial_obj]
         else: 
             trials[nsig].append(trial_obj)
+
 print('Starting sensitivity calculation')
-result = sptr.find_n_sig(np.median(trials[0]), 0.9, max_batch_size=0, 
-                        logging=True, trials=trials, n_bootstrap=1)
-print(result)
-#trial=sptr.get_one_trial(1)
-#scan=sstr.get_one_scan_from_trial(trial, mp_cpus=15, logging=False)
-#sstr.find_n_sig(0,.9)
-"""
-for seed in range(n_trials):
-    scan = sstr.get_one_scan(seed = seed, mp_cpus=15, logging=False)
-    
-    if max(scan[1])>0.:
-        ts_with_prior=np.zeros(len(scan[1]))
-        w=np.where(scan[1]>0.)[0]
-        for i in w:
-            pixel_ts=scan[1][i] + sp_tr.llh_prior_term[0][i]
-            ts_with_prior[i]=max([pixel_ts,0])
-        scan_max=max(ts_with_prior)
-        if scan_max>0.: 
-            hottest_pix=np.where(ts_with_prior==scan_max)[0][0]
-            hottest_loc=hp.pix2ang(args.nside,hottest_pix,lonlat=True)
-        else: 
-            hottest_pix=None
-            hottest_loc=None
-        
-        del ts_with_prior #very large array, delete when no longer needed
-    else: 
-        scan_max=max(scan[1])
-        hottest_pix=None
-        hottest_loc=None
+with open(f'/home/jthwaites/FRB/background_trials/spatial_prior/{args.source}_bg_{args.deltaT}.pkl',
+            'rb') as outfile:
+    bg_trials=pkl.load(outfile)
 
-    trials[seed]={'max_TS':scan_max, 'hottest_pix':hottest_pix, 'hottest_loc':hottest_loc} 
-    del scan #also very large, free memory when unneeded
-print('Done with TS background scans.')    
+trials[0.]=bg_trials
+sens = sptr.find_n_sig(np.median(trials[0.]['ts']), 0.9, max_batch_size=0, logging=False, 
+                         trials=trials, n_bootstrap=1)
 
-with open('/home/jthwaites/FRB/background_trials/%s_bg_%i.pkl'%(args.source,args.deltaT), 'wb') as outfile:
-    pkl.dump(trials, outfile)
-"""
+with open(f'/home/jthwaites/FRB/sens_trials/spatial_prior/{args.source}_bg_{args.deltaT}.pkl',
+            'wb') as outfile:
+    pkl.dump(sens, outfile)
