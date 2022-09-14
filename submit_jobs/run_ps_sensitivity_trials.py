@@ -64,7 +64,9 @@ frbs = frbs.reset_index()
 
 for frb_name in frbs['src']:
     for time_window in np.logspace(-2,6,num=9):
-        if time_window<100.:
+        if time_window<10.:
+            ntrials=1000000
+        elif time_window<10000.:
             ntrials=100000
         else:
             ntrials=10000
