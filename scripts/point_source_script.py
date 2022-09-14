@@ -145,5 +145,8 @@ sens, dp=get_sensitivity(src)
 plot_passing_fraction(src, sens, dp)
 
 with open('/home/jthwaites/FRB/sens_trials/point_source/'+
-             f'{args.source}_bg_{args.deltaT}.pkl', 'wb') as outfile:
-    pkl.dump(sens, dp, outfile)
+             f'{args.source}_sens_{args.deltaT}.pkl', 'wb') as outfile:
+    pkl.dump(sens, outfile)
+with open('/home/jthwaites/FRB/sens_trials/point_source/'+
+             f'{args.source}_5sigdp_{args.deltaT}.pkl', 'wb') as outfile:
+    pkl.dump(dp, outfile)
