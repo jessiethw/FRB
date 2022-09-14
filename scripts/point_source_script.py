@@ -39,7 +39,10 @@ args = parser.parse_args()
 def scan_bg(src, n_trials=10000, frb_name = 'test_frb', print_plot=False):
     tr=cy.get_trial_runner(cy.CONF,ana=cy.CONF['ana'],src=src)
     
-    deltaT=round(src['t_100'][0]*84600.)
+    if src['t_100'][0]*84600. < 2.:
+        deltaT=round(src['t_100'][0]*84600.)
+    else:
+        deltaT=round(src['t_100'][0]*84600., 2)
     #running bg trials
     trials=tr.get_many_fits(n_trials, seed=0)
     bg = cy.dists.Chi2TSD(trials)
@@ -63,7 +66,7 @@ def scan_bg(src, n_trials=10000, frb_name = 'test_frb', print_plot=False):
         if src['t_100'][0]==1.: plt.title(r'BG TS distribution, %s (1d)'%(frb_name))
         else: plt.title(r'BG TS distribution, %s (%is)'%(frb_name,src['t_100'][0]*84600.))
         ax.legend()
-        plt.savefig('/home/jthwaites/FRB/plots/bg_ts_distributions/%s_bgts_%is.png'
+        plt.savefig('/home/jthwaites/FRB/plots/point_source/bg_ts_distributions/%s_bgts_%is.png'
                     %(frb_name,int(src['t_100'][0]*84600.)))
         
     with open('/home/jthwaites/FRB/background_trials/point_source/'+

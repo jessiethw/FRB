@@ -127,9 +127,9 @@ if args.make_ts_hist:
 
     ax.set_xlabel(r'TS')
     ax.set_ylabel(r'$N$')
-    plt.title(r'BG TS distribution, %s, with prior (%is)'%(args.source,args.deltaT))
+    plt.title(f'BG TS distribution, {args.source}, with prior ({args.deltaT}s)')
     ax.legend()
 
-    plt.savefig('/home/jthwaites/FRB/plots/bg_ts_distributions/%s_bgts_%is_w_prior.png' \
+    plt.savefig('/home/jthwaites/FRB/plots/bg_ts_distributions/spatial_prior/%s_bgts_%is_w_prior.png' \
                 %(args.source,args.deltaT))
 
