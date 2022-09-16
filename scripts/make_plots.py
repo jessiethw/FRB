@@ -22,4 +22,4 @@ if frb_scripts_path not in sys.path:
     sys.path.append(frb_scripts_path)
 import plot_functions as plotf
 
-plotf.sens_tw_plot('FRB110523',[1000.,10000.])
+plotf.sens_tw_plot('FRB110523',np.logspace(0,6,num=7))

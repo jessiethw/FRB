@@ -22,8 +22,11 @@ mpl.style.use('/home/jthwaites/FRB/scripts/plots_style.mplstyle')
 
 #######################################################################
 #plot sensitivites over time windows for FRBs
-def sens_tw_plot(frb_name, time_windows, path='/home/jthwaites/FRB/sens_trials/point_source'):
+def sens_tw_plot(frb_name, time_windows, path='/home/jthwaites/FRB/sens_trials/point_source', plot_name='sens_tw'):
+    #frb_name can be an array or single frb
     #time_windows is an array of all timewindows to load trials from
+    sens_frbs=[]
+    twindows=[]
     for tw in time_windows:
         tw_str=str(round(tw,1))
         pkl_path=path+f'/{frb_name}_sens_{tw_str}.pkl'
@@ -35,7 +38,16 @@ def sens_tw_plot(frb_name, time_windows, path='/home/jthwaites/FRB/sens_trials/p
 
         with open(pkl_path, 'rb') as f:
             sens = pkl.load(f)
-        print(sens)
+
+        sens_frbs.append(sens['n_sig'])
+        twindows.append(tw)
+    
+    fig, ax = plt.subplots(figsize=(9,6))
+    plt.plot(twindows,sens_frbs, 'o', label=frb_name)
+    plt.xscale('log')
+    plt.xlabel('time window [s]')
+    plt.ylabel(r'n$_s$')
+    plt.savefig(f'/home/jthwaites/FRB/plots/{plot_name}.png')
 
 #######################################################################
 #make ts dist by loading pickle file
