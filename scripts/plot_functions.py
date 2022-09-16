@@ -4,6 +4,9 @@ June 2022
 """
 
 import numpy as np
+import matplotlib as mpl
+mpl.use('agg')
+
 import csky as cy
 import pandas as pd
 from astropy.coordinates import SkyCoord
@@ -11,11 +14,28 @@ from astropy import units as u
 import healpy as hp
 import histlite as hl
 import meander
-import matplotlib as mpl
-mpl.use('agg')
 import matplotlib.pyplot as plt
+import os
+import pickle as pkl
 
 mpl.style.use('/home/jthwaites/FRB/scripts/plots_style.mplstyle')
+
+#######################################################################
+#plot sensitivites over time windows for FRBs
+def sens_tw_plot(frb_name, time_windows, path='/home/jthwaites/FRB/sens_trials/point_source'):
+    #time_windows is an array of all timewindows to load trials from
+    for tw in time_windows:
+        tw_str=str(round(tw,1))
+        pkl_path=path+f'/{frb_name}_sens_{tw_str}.pkl'
+
+        if not os.path.exists(pkl_path):
+            #skip time window if not found
+            print(f'pickle not found for tw={tw_str}')
+            continue
+
+        with open(pkl_path, 'rb') as f:
+            sens = pkl.load(f)
+        print(sens)
 
 #######################################################################
 #make ts dist by loading pickle file
