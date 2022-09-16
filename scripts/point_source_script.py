@@ -66,7 +66,7 @@ def scan_bg(src, n_trials=10000, frb_name = 'test_frb', print_plot=False):
         if src['t_100'][0]==1.: plt.title(r'BG TS distribution, %s (1d)'%(frb_name))
         else: plt.title(r'BG TS distribution, %s (%is)'%(frb_name,src['t_100'][0]*84600.))
         ax.legend()
-        plt.savefig('/home/jthwaites/FRB/plots/point_source/bg_ts_distributions/%s_bgts_%is.png'
+        plt.savefig('/home/jthwaites/FRB/plots/bg_ts_distributions/point_source/%s_bgts_%is.png'
                     %(frb_name,int(src['t_100'][0]*84600.)))
         
     with open('/home/jthwaites/FRB/background_trials/point_source/'+
