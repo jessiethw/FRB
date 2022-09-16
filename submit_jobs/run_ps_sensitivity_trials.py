@@ -60,10 +60,18 @@ spatial_priors=[]
 for (index,frb) in frbs.iterrows():
     if frb['src'] in spatial_priors:
         frbs=frbs.drop([index])
+
+repeater_names, rep_index= np.unique(frbs['src'][frbs['repeater']==True], return_index=True)
+all_repeats = frbs[frbs['repeater']==True].index
+first_repeat= frbs['src'][frbs['repeater']==True].index[rep_index]
+for i in all_repeats:
+    if i not in first_repeat:
+        frbs=frbs.drop([i])
+
 frbs = frbs.reset_index()
 
 for frb_name in frbs['src']:
-    for time_window in np.logspace(-2,6,num=9):
+    for time_window in np.logspace(0,6,num=7):
         if time_window<10.:
             ntrials=1000000
         elif time_window<10000.:

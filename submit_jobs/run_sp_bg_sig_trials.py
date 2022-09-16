@@ -76,8 +76,15 @@ sens_job = pycondor.Job(
 
 frbs = pd.read_csv('/home/jthwaites/FRB/catalog/spatial_priors_frbs.csv')
 
+repeater_names, rep_index= np.unique(frbs['src'][frbs['repeater']==True], return_index=True)
+all_repeats = frbs[frbs['repeater']==True].index
+first_repeat= frbs['src'][frbs['repeater']==True].index[rep_index]
+for i in all_repeats:
+    if i not in first_repeat:
+        frbs=frbs.drop([i])
+
 for frb_name in frbs['src']:
-    for time_window in np.logspace(-2,6,num=9):
+    for time_window in np.logspace(0,6,num=7):
         if time_window<100.:
             ntrials=100000
         else:
